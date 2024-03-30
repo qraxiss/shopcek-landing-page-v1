@@ -1,0 +1,111 @@
+footer {
+    background: transparent linear-gradient(102deg, #ffffff8c 0%, #ffffffb3 24%, #ffffff5c 68%, #ffffffc7 100%) 0% 0% no-repeat padding-box;
+    padding: 6rem 12rem;
+    border-top: 1px solid #fff;
+
+    gap: 1rem;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 1rem;
+
+        img.icon {
+            width: 8rem;
+        }
+
+        img.text {
+            width: 16rem;
+        }
+    }
+
+    .nav {
+        .title {
+            font: normal normal 400 18px/22px Montserrat;
+            letter-spacing: 0px;
+            color: #000000;
+            min-width: 12rem;
+            height: 1.2rem;
+        }
+
+        .page {
+            font: normal normal 400 18px/22px Montserrat;
+            letter-spacing: 0px;
+            color: #757575;
+        }
+
+        .subscribe {
+            button {
+                background: transparent linear-gradient(108deg, #f556b8 0%, #14c5f0 100%) 0% 0% no-repeat padding-box;
+                border-width: 0;
+                border-radius: 0px 12px 12px 0px;
+                padding: 0.7rem 1.6rem;
+
+                .text {
+                    text-align: left;
+                    font: normal normal 400 20px/30px Montserrat;
+                    letter-spacing: 0px;
+                    color: #ffffff;
+                    text-transform: uppercase;
+                }
+            }
+
+            input {
+                background: #fff 0% 0% no-repeat padding-box;
+                border-width: 0;
+                border-radius: 12px 0px 0px 12px;
+                font: normal normal normal 20px/30px Montserrat;
+                padding: 0.7rem;
+            }
+
+            input::placeholder {
+                text-align: left;
+                font: normal normal normal 20px/30px Montserrat;
+                letter-spacing: 0px;
+                color: #757575;
+                text-transform: uppercase;
+            }
+        }
+
+        width: 75%;
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                gap: 3rem;
+                display: flex;
+            }
+
+            .pages {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                width: 12rem;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+
+        .text {
+            font: normal normal normal 18px/22px Montserrat;
+            letter-spacing: 0px;
+            color: #757575;
+        }
+    }
+    hr.mid {
+        margin-top: 0.7rem;
+        margin-bottom: 0.7rem;
+    }
+}

@@ -1,0 +1,81 @@
+// header {
+// }
+
+header.header {
+    position: sticky;
+    top: 0px;
+
+    height: 9rem;
+    background: url('../../images/header-background.svg')  no-repeat center 0;
+    background-size: 100%;
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+    border-bottom: 2px white solid;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 999;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        gap: 1rem;
+
+        img {
+            max-height: 6rem;
+        }
+        img.text {
+            height: 5rem;
+        }
+    }
+
+    .nav {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        text-align: right;
+        font: normal normal 600 20px/24px Montserrat;
+        letter-spacing: 0px;
+        color: #000000;
+
+
+        div.launch-app {
+            border-radius: 10px;
+            background-color: white;
+            font: normal normal 600 20px/24px Montserrat;
+            letter-spacing: 0px;
+            color: #f556b7;
+            text-transform: uppercase;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            span {
+                margin: 1rem;
+            }
+
+        }
+    }
+}
+
+
+.launch-app {
+    position: relative;
+}
+
+.launch-app::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: transparent linear-gradient(104deg, #f556b8 0%, #14c5f0 100%) 0% 0% border-box;
+    border: 3px solid transparent; /*2*/
+    border-radius: 9px;
+    -webkit-mask: /*4*/ linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; /*5'*/
+    mask-composite: exclude; /*5*/
+}

@@ -1,0 +1,34 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: url('../images/background.svg') no-repeat center 0;
+    background-size: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+
+    font-size: 18px;
+
+
+
+    font: normal normal 400 1rem/1.1rem Monserrat !important;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+
+section {
+    padding-top: 0rem;
+}
+
+.container-outside {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.container-inside {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+
