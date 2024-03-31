@@ -10,9 +10,11 @@ export function Header() {
     return (
         <React.Fragment>
             <Menu>
+               <div className="menu">
+               <Logo />
                 <hr />
                 <Nav />
-               <Logo />
+               </div>
             </Menu>
             <header className="header">
                 <img className='icon' src={icon}/>
