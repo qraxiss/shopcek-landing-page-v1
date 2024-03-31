@@ -97,10 +97,23 @@ footer {
         }
     }
 
-    hr.mid {
+    hr {
         margin-top: 0.7rem;
         margin-bottom: 0.7rem;
+        border-width: 0px 0px 1px 0px;
+        height: 0;
+        border-color: #a2a0a0;
+
     }
+
+    // hr {
+    //     border-width: 0px 0px 1px 0px;
+    //     border-color: #ffffff;
+    //     position: relative;
+    //     top: -.6rem;
+    //     left: -3rem;
+    //     width: 150%;
+    // }
 }
 
 @media only screen and (max-width: 1200px) {

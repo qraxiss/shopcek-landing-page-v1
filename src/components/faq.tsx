@@ -28,7 +28,7 @@ export function Faq() {
                                 <div className="text">What are the key features of Shopcek?</div>
                                 <img src={plus} alt="" />
                             </div>
-                            <div className="box">
+                            <div className="box extended">
                                 <div className="text">What are the Refill & Marketplace Strategies?</div>
                                 <img src={plus} alt="" />
                             </div>
