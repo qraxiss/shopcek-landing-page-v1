@@ -97,6 +97,8 @@ section.services-page {
 
 
     .services-page {
+        
+
         .sub-title {
             text-align: center;
         }
@@ -111,6 +113,7 @@ section.services-page {
 
     
     .services {
+        width: 80%;
         margin-top: unset !important;
         flex-direction: column !important;
         align-items: center;

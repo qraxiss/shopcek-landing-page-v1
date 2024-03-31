@@ -8,6 +8,8 @@ section.swiper-page {
     }
 
 
+
+
     hr {
         margin-top: 0.7rem;
         margin-bottom: 0.7rem;
@@ -20,15 +22,24 @@ section.swiper-page {
     
     .swiper-wrapper {
         img {
-            height: 14em;
+            height: 50%;
         }
         .swiper-slide {
-            justify-content: center;
+            // justify-content: space-between;
             align-items: center;
             display: flex;
             flex-direction: column;
             gap: .1em;
         }
+
+        .content {
+            height: 50%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+    
 
         .title {
             font-size: 1.3em;
@@ -39,7 +50,7 @@ section.swiper-page {
 
         .text {
             font-weight: 200;
-            font-size: 0.85em;
+            font-size: 0.65em;
             width: 84%;
             text-align: center;
             color: #000000;
