@@ -4,29 +4,46 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
-import { useRef } from 'react'
-
 import img1 from '../assets/images/slider/1.svg'
 import img2 from '../assets/images/slider/2.svg'
 import img3 from '../assets/images/slider/3.svg'
 import next from '../assets/images/slider/right.svg'
 import prev from '../assets/images/slider/left.svg'
-import React from 'react'
+
+import { useMediaQuery } from 'react-responsive'
+import React, { useEffect, useState } from 'react'
 
 export function Slider() {
+    const isPhone = useMediaQuery({ query: '(max-width: 768px)' })
+    const [nextimg,setNext] = useState<any>()
+    const [previmg,setPrev] = useState<any>()
+    useEffect(()=>{
+        console.log(isPhone)
+        if (!isPhone){
+            setNext(<img src={prev} className="swiper-button-next-svg" />)
+            setPrev(<img src={next} className="swiper-button-prev-svg" />)
+        }else {
+            setNext(undefined)
+            setPrev(undefined)
+        }
+    }, [isPhone])
 
     return (
         <React.Fragment>
-            <section className="swiper-page container-outside">
-                <img src={prev} className="swiper-button-next-svg" />
+            <section className="swiper-page">
+                {nextimg}
                 <Swiper
-                    modules={[Navigation, Pagination, Autoplay]}
+                    modules={[Navigation, Pagination]}
                     slidesPerView={1}
                     pagination={true}
-                    navigation={{
-                        prevEl: ".swiper-button-next-svg", // Assert non-null
-                        nextEl: ".swiper-button-prev-svg" // Assert non-null
-                    }}
+                    navigation={
+                        isPhone
+                            ? undefined
+                            : {
+                                  prevEl: '.swiper-button-next-svg', // Assert non-null
+                                  nextEl: '.swiper-button-prev-svg' // Assert non-null
+                              }
+                    }
                     loop={true}
                     autoplay={{ delay: 2500, disableOnInteraction: false }}
                 >
@@ -59,9 +76,8 @@ export function Slider() {
                             </div>
                         </SwiperSlide>
                     </div>
-                    
                 </Swiper>
-                <img src={next} className="swiper-button-prev-svg" />
+                {previmg }
             </section>
         </React.Fragment>
     )

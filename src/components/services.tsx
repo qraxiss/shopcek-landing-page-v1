@@ -8,7 +8,7 @@ import icons from '../assets/images/services/icons.png'
 export function Services() {
     return (
         <React.Fragment>
-            <section className="services container-inside">
+            <section className="services-page">
                 <img src={icons} className='icons' />
                 <div className="title">SERVICES</div>
 

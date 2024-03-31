@@ -1,90 +1,111 @@
-.faq {
-    display: flex;
-    padding-top: 15rem;
-    padding-left: 11rem;
-    padding-right: 11rem;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 15rem;
-
-    hr {
-        width: 20%;
-        height: 0;
-        border-bottom: 1.5px #f556b7 solid !important;
-        border-radius: 10px;
-        border: 0;
-        margin: 8px 0px !important;
-    }
-
-    .info {
-    
-        width: 50%;
+.faq-page {
+    .faq {
         display: flex;
-        flex-direction: column;
-        align-items: end;
-
-
-        .title {
-            text-align: left;
-            font: normal normal normal 45px/55px Montserrat;
-            letter-spacing: 0px;
-            color: #000000;
-            text-transform: uppercase;
+    
+        hr {
+            width: 20%;
+            height: 0;
+            border-bottom: 1.5px #f556b7 solid !important;
+            border-radius: 10px;
+            border: 0;
+            margin: 8px 0px !important;
         }
-
-        .sub-title {
-            font: normal normal bold 30px/37px Montserrat;
-            letter-spacing: 0px;
-            color: #ffffff;
-            text-shadow: 0px 2px 7px #00000029;
-        }
-
-        .text {
+    
+        .info {
             text-align: right;
-            font: normal normal 400 23px/36px Montserrat;
-            letter-spacing: 0px;
-            color: #707070;
-        }
-
-        .questions {
-            padding-top: 2rem;
+            width: 40%;
             display: flex;
             flex-direction: column;
-            gap:1rem;
-            width: 100%;
-            .box {
-                width: 100%;
-                background: #FFFFFF91 0% 0% no-repeat padding-box;
-                border: 2px solid #FFFFFF;
-                border-radius: 12px;
-                height: 2.5rem;
-
-
-                padding-left: 1rem;
-                padding-right: 1rem;
+            align-items: end;
+            justify-content: right;
+            gap: .6rem;
+            position: absolute;
+    
+            .title {
+                color: #000000;
+            }
+    
+            .sub-title {
+                color: #ffffff;
+            }
+    
+            .text {
+                // font-weight: 200;
+                font-size: 1.3em;
+                color: #707070;
+            }
+    
+            .questions {
+                padding-top: 2rem;
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
-
-                img {
-                    width: 1rem;
-                }
-
-                .text {
+                flex-direction: column;
+                gap: 1rem;
+                width: 100%;
+                .box {
                     text-align: left;
-                    // font: normal normal normal 26px/32px Montserrat;
-                    font: normal normal normal 20px/32px Montserrat;
-                    letter-spacing: 0px;
-                    color: #000000;
+                    width: 93%;
+                    background: #ffffff91 0% 0% no-repeat padding-box;
+                    border: 2px solid #ffffff;
+                    border-radius: 12px;
+                    height: 2.5rem;
+    
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    img {
+                        width: 1rem;
+                    }
+    
+                    .text {
+                font-weight: 200;
+
+                        color: #000000;
+                    }
                 }
             }
         }
+    
+        img.question {
+            position: relative;
+            width: 65%;
+            left: 40em;
+            bottom: -5em;
+        }
     }
+}
 
-    img.question{
-        width: 49%;
-        position: relative;
-        left: -0.5rem;
-        bottom: -3.5rem;
+
+@media only screen and (max-width: 768px) {
+    .faq-page {
+        .faq {
+            align-items: center;
+            flex-direction: column;
+
+            img.question {
+                width: 100%;
+                position: unset;
+                left: unset;
+                bottom: unset;
+            }
+
+            .info {
+                text-align: center !important;
+                width: 100%;
+                align-items: center;
+                position: unset;
+
+                .box {
+                    .text{
+                        font-size: .85em;
+                    }
+
+                    height: 1.1em;
+                }
+            }
+        }
     }
 }

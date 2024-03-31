@@ -1,0 +1,24 @@
+.sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    section:first-child{
+        padding-bottom: 0em !important;
+    }
+
+}
+
+section {
+    padding-top: 2em;
+    padding-bottom: 8em;
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        padding-top: 1em;
+        padding-bottom: 4em;
+    }
+}
+

@@ -1,16 +1,16 @@
-section.services {
-    margin-top: -21rem;
-    padding-bottom: 15rem;
+section.services-page {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1.5rem;
+    margin-top: -25rem;
 
     img.icons{
         position: relative;
-        bottom: -27rem;
-        width: 122%;
+        width: 125%;
         object-fit: cover;
+        bottom: -20rem;
     }
 
     .services {
@@ -19,8 +19,8 @@ section.services {
         gap: 2rem;
 
         .box {
-            padding: 2.5rem 1rem;
-            width: 30%;
+            padding: 2.5rem .6rem;
+            width: 36%;
             height: auto;
             background: transparent linear-gradient(131deg, #ffffff6b 0%, #ffffff8c 24%, #ffffff17 68%, #ffffffa8 100%) 0% 0% no-repeat padding-box;
             border: 2px solid #ffffff;
@@ -33,25 +33,19 @@ section.services {
             gap: 0.6rem;
     
             .title {
-                text-align: center;
-                font: normal normal 600 26px/32px Montserrat !important;
-                letter-spacing: 0px;
+                font-size: 1.42rem;
+                font-weight: 500;
                 color: #000000;
-                text-transform: uppercase;
             }
     
             .sub-title {
-                text-align: center;
-                font: normal normal 500 24px/29px Montserrat !important;
-                letter-spacing: 0px;
+                font-weight: 200;
+                font-size: 1.22rem;
                 color: #000000;
-                text-transform: uppercase;
             }
     
             .text {
-                text-align: center;
-                font: normal normal 400 22px/36px Montserrat !important;
-                letter-spacing: 0px;
+                width: 100%;
                 color: #707070;
             }
     
@@ -65,32 +59,24 @@ section.services {
     
             img {
                 padding-top: 2rem;
-                height: 30%;
+                    height: 6em;
+                
             }
         }
     }
 
     .title {
-        text-align: center;
-        font: normal normal 400 50px/53px Montserrat !important;
-        letter-spacing: 0px;
         color: #000000;
-        text-transform: uppercase;
     }
 
     .sub-title {
-        text-align: center;
-        font: normal normal 600 30px/34px Montserrat !important;
-        letter-spacing: 0px;
         color: #ffffff;
-        text-transform: uppercase;
     }
 
     .text {
-        width: 61%;
+        font-size: 1.2rem;
         text-align: center;
-        font: normal normal 400 22px/36px Montserrat !important;
-        letter-spacing: 0px;
+        width: 61%;
         color: #707070;
     }
 
@@ -103,40 +89,40 @@ section.services {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
     img.icons{
         opacity: 0;
-        
+        width: 0;
     } 
 
+
+    .services-page {
+        .sub-title {
+            text-align: center;
+        }
+    
+        hr {
+            width: 50% !important;
+        }
+        .text {
+            width: 97% !important
+        }
+    }
+
+    
     .services {
+        margin-top: unset !important;
         flex-direction: column !important;
-        width: 30rem !important;
+        align-items: center;
+
+
+
+        .box {
+            width: 97% !important;
+        }
+        // width: 30rem !important;
     }
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
 
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}

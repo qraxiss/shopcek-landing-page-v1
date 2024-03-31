@@ -5,7 +5,7 @@ import plus from '../assets/images/faq/plug.svg'
 export function Faq() {
     return (
         <React.Fragment>
-            <section className="section">
+            <section className="faq-page">
                 <div className="faq">
                     <div className="info">
                         <div className="title">FAQ</div>
