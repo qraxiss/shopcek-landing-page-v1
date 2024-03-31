@@ -6,7 +6,7 @@ export function Partnership() {
     return (
         <React.Fragment>
             <section className='partnership-page'>
-                <div className="partnership">
+                <div className="partnership" id='partnership'>
                     <div className="info">
                         <div className="title">PARTNERSHIP</div>
 

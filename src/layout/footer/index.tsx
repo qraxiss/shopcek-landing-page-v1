@@ -31,17 +31,17 @@ function Nav() {
             <div className="row">
                 <div className="left">
                     <div className="pages">
-                        <div className="page">SERVICES</div>
-                        <div className="page">PARTNERSHIP</div>
-                        <div className="page">FAQ</div>
-                        <div className="page">DOCS</div>
-                        <div className="page">LAUNCH APP</div>
+                        <a href='/#services' className="page">SERVICES</a>
+                        <a href='/#partnership' className="page">PARTNERSHIP</a>
+                        <a href='/#faq' className="page">FAQ</a>
+                        <a href='https://shopcek.gitbook.io/shopcek-or-shpc-1/' className="page">DOCS</a>
+                        <a className="page">LAUNCH APP</a>
                     </div>
                     <div className="pages">
-                        <div className="page">BRAND</div>
-                        <div className="page">CAREER</div>
-                        <div className="page">TERMS OF SERVICES</div>
-                        <div className="page">PRIVACY POLICY</div>
+                        <a href='https://drive.google.com/drive/folders/1cVDyVIY6XN5DtJ9WrjnrYfWU50jXrvYD?usp=sharing' className="page">BRAND</a>
+                        <a href='https://shopcek.gitbook.io/shopcek-or-shpc-1/institutional/career' className="page">CAREER</a>
+                        <a href='https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/terms-and-conditions'  className="page">TERMS OF SERVICES</a>
+                        <a href='https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/privacy-policy' className="page">PRIVACY POLICY</a>
                     </div>
                 </div>
 

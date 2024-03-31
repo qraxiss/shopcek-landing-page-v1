@@ -151,7 +151,7 @@ export function Faq() {
     return (
         <React.Fragment>
             <section className="faq-page">
-                <div className="faq">
+                <div className="faq" id="faq">
                     <div className="info">
                         <div className="title">FAQ</div>
 
