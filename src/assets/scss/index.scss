@@ -1,17 +1,24 @@
 body {
     padding: 0;
     margin: 0;
-    background: url('../images/background.svg') no-repeat center 0;
-    background-size: 100%;
-    background-color: rgba(255, 255, 255, 0.4);
-    background-blend-mode: lighten;
-    background-attachment: fixed;
 
     font-size: 30px;
 
     font: normal normal 300 1rem Montserrat !important;
     letter-spacing: 0px !important;
     text-transform: uppercase;
+}
+
+.bg {
+    background: url('../images/background.svg') no-repeat center 0;
+    background-size: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    top : 0px;
 }
 
 
@@ -48,17 +55,17 @@ div.root {
     }
 }
 
-// body,html {
-//     overflow-x: hidden;
-//     width: 100%;
-//     -webkit-box-sizing: border-box;
-//     -moz-box-sizing: border-box;
-//     box-sizing: border-box;
-// }
+body,html {
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
-// body {
-//     position: relative;
-// }
+body {
+    position: absolute;
+}
 
 @media only screen and (max-width: 768px) {
 
