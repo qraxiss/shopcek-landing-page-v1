@@ -33,7 +33,7 @@ export function Slider() {
             <section className="swiper-page">
                 {nextimg}
                 <Swiper
-                    modules={[Navigation, Pagination]}
+                    modules={[Navigation, Autoplay, Pagination]}
                     slidesPerView={1}
                     pagination={true}
                     navigation={
