@@ -72,6 +72,16 @@ div.root {
     }
 }
 
+body,
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+// body {
+//     position: absolute;
+// }
+
 @media only screen and (max-width: 768px) {
     .container {
         width: 95%;
@@ -107,12 +117,7 @@ div.root {
     html,
     body {
         content: '';
-        width: 100%;
         background-image: url('../images/mobile-background.png');
-        background-size: inherit;
-        background-attachment: inherit;
-        background-repeat: inherit;
-        top: 0;
         z-index: -1;
         // padding-bottom: env(safe-area-inset-/bottom);
     }
