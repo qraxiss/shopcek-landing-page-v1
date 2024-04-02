@@ -24,9 +24,7 @@ export function Partnership() {
         })
 
         const handleChange = (value: any) => {
-            console.log(value)
             formik.handleChange(value)
-            console.log(formik.values)
         }
 
         return (
@@ -63,12 +61,36 @@ export function Partnership() {
                                         value={formik.values.partnerName}
                                         onBlur={formik.handleBlur}
                                     />
-                                    <input type="text" placeholder="EMAIL" onChange={handleChange} />
+                                    <input
+                                        type="text"
+                                        placeholder="EMAIL"
+                                        id="email"
+                                        name="email"
+                                        onChange={handleChange}
+                                        value={formik.values.email}
+                                        onBlur={formik.handleBlur}
+                                    />
                                 </div>
 
                                 <div className="row">
-                                    <input type="text" placeholder="CONTACT NAME" />
-                                    <input type="text" placeholder="TELEGRAM HANDLE" />
+                                    <input
+                                        type="text"
+                                        placeholder="CONTACT NAME"
+                                        id="name"
+                                        name="name"
+                                        onChange={handleChange}
+                                        value={formik.values.name}
+                                        onBlur={formik.handleBlur}
+                                    />
+                                    <input
+                                        type="text"
+                                        placeholder="TELEGRAM HANDLE"
+                                        id="telegramHandle"
+                                        name="telegramHandle"
+                                        onChange={handleChange}
+                                        value={formik.values.telegramHandle}
+                                        onBlur={formik.handleBlur}
+                                    />
                                 </div>
 
                                 <button

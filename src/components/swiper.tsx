@@ -18,7 +18,6 @@ export function Slider() {
     const [nextimg, setNext] = useState<any>()
     const [previmg, setPrev] = useState<any>()
     useEffect(() => {
-        console.log(isPhone)
         if (!isPhone) {
             setNext(
                 <img
@@ -34,7 +33,6 @@ export function Slider() {
             setPrev(
                 <img
                     onClick={() => {
-                        console.log('test')
                         //@ts-ignore
                         const swiper = document.querySelector('.swiper').swiper
                         swiper.slideNext()

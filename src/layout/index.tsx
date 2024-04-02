@@ -6,9 +6,7 @@ import { useMediaQuery } from 'react-responsive'
 export function Layout({ children }: { children: any }) {
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
-    useEffect(() => {
-        console.log(isMobile)
-    }, [isMobile])
+    useEffect(() => {}, [isMobile])
 
     return (
         <React.Fragment>
