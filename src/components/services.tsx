@@ -12,7 +12,9 @@ export function Services() {
                 <img src={icons} className='icons' />
                 <div className="title" id="services">SERVICES</div>
 
-                <div className="sub-title" >REVOLUTIONIZING DIGITAL COMMERCE</div>
+                <div className="sub-title" onClick={()=>{
+                    console.log('test')
+                }} >REVOLUTIONIZING DIGITAL COMMERCE</div>
 
                 <hr />
 

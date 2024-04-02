@@ -20,8 +20,18 @@ export function Slider() {
     useEffect(() => {
         console.log(isPhone)
         if (!isPhone) {
-            setNext(<img src={prev} className="swiper-button-next-svg" />)
-            setPrev(<img src={next} className="swiper-button-prev-svg" />)
+            setNext(<img onClick={()=>{
+                console.log('test')
+                //@ts-ignore
+                const swiper = document.querySelector('.swiper').swiper;
+                swiper.slideNext();
+            }} src={prev} className="swiper-button-next-svg" />)
+            setPrev(<img onClick={()=>{
+                console.log('test')
+                //@ts-ignore
+                const swiper = document.querySelector('.swiper').swiper;
+                swiper.slideNext();
+            }} src={next} className="swiper-button-prev-svg" />)
         } else {
             setNext(undefined)
             setPrev(undefined)
@@ -30,12 +40,15 @@ export function Slider() {
 
     return (
         <React.Fragment>
-            <section className="swiper-page">
-                {nextimg}
+            <section className="swiper-page">  
+                {nextimg}   
                 <Swiper
                     modules={[Navigation, Autoplay, Pagination]}
                     slidesPerView={1}
                     pagination={true}
+                    observer={true}
+                    observeParents={true}
+                    parallax={true}
                     navigation={
                         isPhone
                             ? undefined
