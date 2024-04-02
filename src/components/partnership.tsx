@@ -5,9 +5,9 @@ import handshake from '../assets/images/partnership/handshake.png'
 import { useApply, ApplyProvider } from '../assets/context/apply'
 
 export function Partnership() {
-    const { sendInformationGQL } = useApply()
-
     function Component() {
+        const { sendInformationGQL } = useApply()
+
         return (
             <React.Fragment>
                 <section className="partnership-page">
@@ -42,7 +42,19 @@ export function Partnership() {
                                     <input type="text" placeholder="TELEGRAM HANDLE" />
                                 </div>
 
-                                <button className="submit">
+                                <button
+                                    onClick={() => {
+                                        sendInformationGQL.fn({
+                                            variables: {
+                                                email: '1tusbozuk@gmail.com',
+                                                partnerName: '1tusbozuk@gmail.com',
+                                                name: '1tusbozuk@gmail.com',
+                                                telegramHandle: '1tusbozuk@gmail.com'
+                                            }
+                                        })
+                                    }}
+                                    className="submit"
+                                >
                                     <div className="text">SUBMIT</div>
                                 </button>
                             </div>
