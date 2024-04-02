@@ -2,10 +2,10 @@
     "emeraldwalk.runonsave": {
         "commands": [
             {
-                "cmd": "npm run push"
+                "cmd": "npm run pretty"
             },
             {
-                "cmd": "npm run pretty"
+                "cmd": "npm run push",
             }
         ]
     }

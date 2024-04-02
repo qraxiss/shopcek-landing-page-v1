@@ -13,7 +13,6 @@ function App() {
                 <Routes />
             </BrowserRouter>
         </React.Fragment>
-        
     )
 }
 
