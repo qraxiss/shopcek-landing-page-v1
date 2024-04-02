@@ -109,7 +109,7 @@ body {
     //     background: url('../images/mobile-background.png') no-repeat center 0;
     // }
 
-    selector:after {
+    html,body {
         content: '';
         width: 100%;
         height: 100%;
