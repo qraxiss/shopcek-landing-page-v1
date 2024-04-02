@@ -1,12 +1,31 @@
-import React from 'react'
-
 import handshake from '../assets/images/partnership/handshake.png'
 
 import { useApply, ApplyProvider } from '../assets/context/apply'
 
+import Popup from 'reactjs-popup'
+import 'reactjs-popup/dist/index.css'
+
+import React, { useState, useRef, useEffect } from 'react'
+
+function useSubmitButton() {
+    const [submit, setSubmit] = useState(document.querySelector('#partnershipSubmit'))
+
+    useEffect(() => {})
+}
+
 export function Partnership() {
     function Component() {
         const { sendInformationGQL } = useApply()
+        const submitRef = useRef()
+
+        const [popup, setPopup] = useState<any>()
+
+        useEffect(() => {
+            if (submitRef) {
+                //@ts-ignore
+                setPopup()
+            }
+        }, [submitRef])
 
         return (
             <React.Fragment>
@@ -43,6 +62,7 @@ export function Partnership() {
                                 </div>
 
                                 <button
+                                    id="partnershipSubmit"
                                     onClick={() => {
                                         sendInformationGQL.fn({
                                             variables: {
@@ -66,6 +86,10 @@ export function Partnership() {
                         </div>
                     </div>
                     <img src={handshake} className="handshake" />
+                    <Popup open={true}>
+                        <div>GeeksforGeeks</div>
+                        <button>Click here</button>
+                    </Popup>
                 </section>
             </React.Fragment>
         )
