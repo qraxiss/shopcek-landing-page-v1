@@ -1,6 +1,6 @@
 import handshake from '../assets/images/partnership/handshake.png'
 
-import { useApply, ApplyProvider } from '../assets/context/apply'
+import { useApply, ApplyProvider } from '../context/apply'
 
 import Popup from 'reactjs-popup'
 import 'reactjs-popup/dist/index.css'
@@ -25,7 +25,7 @@ export function Partnership() {
             formik.handleChange(value)
         }
 
-        const [open, setOpen] = useState(true)
+        const [open, setOpen] = useState(false)
 
         useEffect(() => {
             if (sendInformationGQL.status) {
