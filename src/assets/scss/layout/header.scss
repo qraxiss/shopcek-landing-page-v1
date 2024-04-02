@@ -84,9 +84,24 @@ header.header, .bm-menu {
             margin: 1rem;
         }
 
+        cursor: pointer;
+
     }
 }
 
+
+img.out {
+
+    width: .9em;
+    height: .9em;
+    padding-bottom: .15em;
+}
+
+a[target="_blank"] {
+    display: flex;
+    align-items: center;
+    gap: .4em;
+}
 
 .launch-app {
     position: relative;

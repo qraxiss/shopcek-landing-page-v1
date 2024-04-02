@@ -9,13 +9,19 @@ import tg from '../../assets/images/socials/tg.svg'
 import medium from '../../assets/images/socials/medium.svg'
 import { useNavigate } from 'react-router'
 
+import gray from '../../assets/images/about/gray.svg'
+
+
 function Logo() {
     const navigate = useNavigate()
 
     return (
-        <div onClick={()=>{
-            navigate('/')
-        }} className="logo">
+        <div
+            onClick={() => {
+                navigate('/')
+            }}
+            className="logo"
+        >
             <img className="icon" src={icon} />
             <img className="text" src={text} />
         </div>
@@ -50,25 +56,35 @@ function Nav() {
                         <a href="/#faq" className="page">
                             FAQ
                         </a>
-                        <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/" className="page">
+                        <a target="_blank" href="https://shopcek.gitbook.io/shopcek-or-shpc-1/" className="page">
                             DOCS
+                            <img src={gray} className="out" />
                         </a>
-                        <div                         onClick={() => {
-                            navigate('/launch-app')
-                        }} className="page">LAUNCH APP</div>
+                        <a
+                            onClick={() => {
+                                navigate('/launch-app')
+                            }}
+                            className="page"
+                        >
+                            LAUNCH APP
+                        </a>
                     </div>
                     <div className="pages">
-                        <a href="https://drive.google.com/drive/folders/1cVDyVIY6XN5DtJ9WrjnrYfWU50jXrvYD?usp=sharing" className="page">
+                        <a target="_blank"  href="https://drive.google.com/drive/folders/1cVDyVIY6XN5DtJ9WrjnrYfWU50jXrvYD?usp=sharing" className="page">
                             MEDIA KIT
+                            <img src={gray} className="out" />
                         </a>
-                        <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/institutional/career" className="page">
+                        <a target="_blank"  href="https://shopcek.gitbook.io/shopcek-or-shpc-1/institutional/career" className="page">
                             CAREER
+                            <img src={gray} className="out" />
                         </a>
-                        <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/terms-and-conditions" className="page">
+                        <a target="_blank"  href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/terms-and-conditions" className="page">
                             TERMS OF SERVICES
+                            <img src={gray} className="out" />
                         </a>
-                        <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/privacy-policy" className="page">
+                        <a  target="_blank" href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/privacy-policy" className="page">
                             PRIVACY POLICY
+                            <img src={gray} className="out" />
                         </a>
                     </div>
                 </div>
@@ -103,32 +119,37 @@ function MobileNav() {
                     <a href="/#faq" className="page">
                         FAQ
                     </a>
-                    <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/" className="page">
+                    <a  target="_blank" href="https://shopcek.gitbook.io/shopcek-or-shpc-1/" className="page">
                         DOCS
+                        <img src={gray} className="out" />
                     </a>
-                    <div
+                    <a
                         onClick={() => {
                             navigate('/launch-app')
                         }}
                         className="page"
                     >
                         LAUNCH APP
-                    </div>
+                    </a>
                 </div>
 
                 <div className="pages">
                     <div className="title">MISC</div>
-                    <a href="https://drive.google.com/drive/folders/1cVDyVIY6XN5DtJ9WrjnrYfWU50jXrvYD?usp=sharing" className="page">
+                    <a target="_blank"  href="https://drive.google.com/drive/folders/1cVDyVIY6XN5DtJ9WrjnrYfWU50jXrvYD?usp=sharing" className="page">
                         MEDIA KIT
+                        <img src={gray} className="out" />
                     </a>
-                    <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/institutional/career" className="page">
+                    <a target="_blank"  href="https://shopcek.gitbook.io/shopcek-or-shpc-1/institutional/career" className="page">
                         CAREER
+                        <img src={gray} className="out" />
                     </a>
-                    <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/terms-and-conditions" className="page">
+                    <a target="_blank"  href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/terms-and-conditions" className="page">
                         TERMS OF SERVICES
+                        <img src={gray} className="out" />
                     </a>
-                    <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/privacy-policy" className="page">
+                    <a target="_blank"  href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/privacy-policy" className="page">
                         PRIVACY POLICY
+                        <img src={gray} className="out" />
                     </a>
                 </div>
 
@@ -149,13 +170,13 @@ function MobileNav() {
 function Socials() {
     return (
         <div className="socials">
-            <a href="https://t.me/shopcek">
+            <a target="_blank"  href="https://t.me/shopcek">
                 <img src={tg} className="social" />
             </a>
-            <a href="https://x.com/shopcek">
+            <a target="_blank"  href="https://x.com/shopcek">
                 <img src={x} className="social" />
             </a>
-            <a href="https://medium.com/shopcek">
+            <a target="_blank"  href="https://medium.com/shopcek">
                 <img src={medium} className="social" />
             </a>
         </div>
