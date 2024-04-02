@@ -54,7 +54,15 @@ export function Partnership() {
 
                             <div className="form">
                                 <div className="row">
-                                    <input type="text" placeholder="PARTNER NAME" id="partnerName" onChange={handleChange} />
+                                    <input
+                                        type="text"
+                                        placeholder="PARTNER NAME"
+                                        id="partnerName"
+                                        name="partnerName"
+                                        onChange={handleChange}
+                                        value={formik.values.partnerName}
+                                        onBlur={formik.handleBlur}
+                                    />
                                     <input type="text" placeholder="EMAIL" />
                                 </div>
 
