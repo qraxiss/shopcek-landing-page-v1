@@ -32,8 +32,8 @@ export function Partnership() {
                 switch (sendInformationGQL.status) {
                     case 'success': {
                         if (sendInformationGQL.data === true) {
+                            formik.setValues({}).then(console.log)
                             setOpen(true)
-                            formik.setValues({})
                         }
                     }
                 }
