@@ -15,6 +15,11 @@ export function Partnership() {
 
         const formik = useFormik({ initialValues: {}, onSubmit: console.log })
 
+        const handleChange = (value: any) => {
+            console.log(value)
+            console.log(formik.values)
+        }
+
         return (
             <React.Fragment>
                 <section className="partnership-page">
@@ -40,7 +45,7 @@ export function Partnership() {
 
                             <div className="form">
                                 <div className="row">
-                                    <input type="text" placeholder="PARTNER NAME" onChange={formik.handleChange} />
+                                    <input type="text" placeholder="PARTNER NAME" onChange={handleChange} />
                                     <input type="text" placeholder="EMAIL" />
                                 </div>
 
