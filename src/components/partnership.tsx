@@ -7,26 +7,16 @@ import 'reactjs-popup/dist/index.css'
 
 import React, { useState, useRef, useEffect } from 'react'
 
-import { Formik, Field, Form } from 'formik'
+import { Formik, Field, Form, useFormik } from 'formik'
 
 export function Partnership() {
     function Component() {
         const { sendInformationGQL } = useApply()
-        const submitRef = useRef()
 
-        const [popup, setPopup] = useState<any>()
-
-        useEffect(() => {
-            if (submitRef) {
-                //@ts-ignore
-                setPopup()
-            }
-        }, [submitRef])
+        const formik = useFormik({ initialValues: {}, onSubmit: console.log })
 
         return (
             <React.Fragment>
-                <Formik initialValues={{}} onSubmit={console.log}></Formik>
-
                 <section className="partnership-page">
                     <div className="partnership" id="partnership">
                         <div className="info">
@@ -50,7 +40,7 @@ export function Partnership() {
 
                             <Form className="form">
                                 <div className="row">
-                                    <Field type="text" placeholder="PARTNER NAME" />
+                                    <Field type="text" placeholder="PARTNER NAME" onChangeText={formik.handleChange} />
                                     <Field type="text" placeholder="EMAIL" />
                                 </div>
 
