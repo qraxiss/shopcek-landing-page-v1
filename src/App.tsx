@@ -5,13 +5,17 @@ import { BrowserRouter } from 'react-router-dom'
 import Routes from './routes'
 import ScrollToTop from './layout/auto-scroll'
 
+import { ApolloProvider } from './lib/apollo-wrapper'
+
 function App() {
     return (
         <React.Fragment>
-            <BrowserRouter>
-                <ScrollToTop />
-                <Routes />
-            </BrowserRouter>
+            <ApolloProvider>
+                <BrowserRouter>
+                    <ScrollToTop />
+                    <Routes />
+                </BrowserRouter>
+            </ApolloProvider>
         </React.Fragment>
     )
 }
