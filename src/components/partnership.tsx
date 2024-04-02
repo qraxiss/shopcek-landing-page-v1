@@ -14,12 +14,7 @@ export function Partnership() {
         const { sendInformationGQL } = useApply()
 
         const formik = useFormik({
-            initialValues: {
-                partnerName: '',
-                name: '',
-                telegramHandle: '',
-                email: ''
-            },
+            initialValues: {} as any,
             onSubmit: console.log
         })
 
