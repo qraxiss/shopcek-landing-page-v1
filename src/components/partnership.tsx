@@ -25,7 +25,7 @@ export function Partnership() {
 
         const handleChange = (value: any) => {
             console.log(value)
-
+            formik.handleChange(value)
             console.log(formik.values)
         }
 
@@ -63,7 +63,7 @@ export function Partnership() {
                                         value={formik.values.partnerName}
                                         onBlur={formik.handleBlur}
                                     />
-                                    <input type="text" placeholder="EMAIL" />
+                                    <input type="text" placeholder="EMAIL" onChange={handleChange} />
                                 </div>
 
                                 <div className="row">
