@@ -72,7 +72,7 @@ export function Slider() {
                               }
                     }
                     loop={true}
-                    autoplay={{ delay: 2500, disableOnInteraction: false }}
+                    autoplay={{ delay: 8000, disableOnInteraction: false }}
                 >
                     <div className="swiper-wrapper">
                         <SwiperSlide className="swiper-slide">
