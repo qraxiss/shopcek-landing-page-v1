@@ -7,7 +7,7 @@ import 'reactjs-popup/dist/index.css'
 
 import React, { useState, useRef, useEffect } from 'react'
 
-import { Formik, Field, Form, useFormik } from 'formik'
+import { useFormik } from 'formik'
 
 export function Partnership() {
     function Component() {
@@ -38,15 +38,15 @@ export function Partnership() {
                         <div className="apply">
                             <div className="title">Apply The Program</div>
 
-                            <Form className="form">
+                            <div className="form">
                                 <div className="row">
-                                    <Field type="text" placeholder="PARTNER NAME" onChangeText={formik.handleChange} />
-                                    <Field type="text" placeholder="EMAIL" />
+                                    <input type="text" placeholder="PARTNER NAME" onChange={formik.handleChange} />
+                                    <input type="text" placeholder="EMAIL" />
                                 </div>
 
                                 <div className="row">
-                                    <Field type="text" placeholder="CONTACT NAME" />
-                                    <Field type="text" placeholder="TELEGRAM HANDLE" />
+                                    <input type="text" placeholder="CONTACT NAME" />
+                                    <input type="text" placeholder="TELEGRAM HANDLE" />
                                 </div>
 
                                 <button
@@ -65,7 +65,7 @@ export function Partnership() {
                                 >
                                     <div className="text">SUBMIT</div>
                                 </button>
-                            </Form>
+                            </div>
 
                             <div className="info-text">
                                 *Once we've reviewed your application, our team will be in touch to discuss the next steps. Thank you for reaching out
