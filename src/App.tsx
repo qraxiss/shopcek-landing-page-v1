@@ -9,11 +9,10 @@ function App() {
     return (
         <React.Fragment>
             <BrowserRouter>
-            <ScrollToTop/>
+                <ScrollToTop />
                 <Routes />
             </BrowserRouter>
         </React.Fragment>
-
         
     )
 }

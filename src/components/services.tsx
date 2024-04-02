@@ -8,11 +8,13 @@ import icons from '../assets/images/services/icons.png'
 export function Services() {
     return (
         <React.Fragment>
-            <section className="services-page" >
-                <img src={icons} className='icons' />
-                <div className="title" id="services">SERVICES</div>
+            <section className="services-page">
+                <img src={icons} className="icons" />
+                <div className="title" id="services">
+                    SERVICES
+                </div>
 
-                <div className="sub-title" >REVOLUTIONIZING DIGITAL COMMERCE</div>
+                <div className="sub-title">REVOLUTIONIZING DIGITAL COMMERCE</div>
 
                 <hr />
 
@@ -21,7 +23,7 @@ export function Services() {
                     redefining how you shop, spend, and engage with the digital economy.
                 </div>
 
-                <div className="services" >
+                <div className="services">
                     <div className="box">
                         <div className="title">MERCH</div>
                         <div className="sub-title">FASHION MEETS CRYPTO</div>

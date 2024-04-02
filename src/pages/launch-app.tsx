@@ -27,7 +27,7 @@ export function LaunchApp() {
                         </div>
 
                         <div className="info-text">
-                        *Discover the full potential of our platform, fill out the form for a personalized demonstration.
+                            *Discover the full potential of our platform, fill out the form for a personalized demonstration.
                         </div>
                     </div>
 

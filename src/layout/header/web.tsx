@@ -21,7 +21,7 @@ export function Nav() {
             </a>
             <a target="_blank" href="https://shopcek.gitbook.io/" className="title">
                 DOCS
-                <img src={black} className='out' />
+                <img src={black} className="out" />
             </a>
             <div
                 onClick={() => {

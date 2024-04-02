@@ -4,7 +4,7 @@ import React from 'react'
 import icon from '../../assets/images/icon.svg'
 import text from '../../assets/images/text.svg'
 
-import { Nav,Logo } from './web'
+import { Nav, Logo } from './web'
 import { useNavigate } from 'react-router'
 
 export function Header() {
@@ -13,20 +13,21 @@ export function Header() {
     return (
         <React.Fragment>
             <Menu>
-               <div className="menu">
-               <Logo />
-                <hr />
-                <Nav />
-               </div>
+                <div className="menu">
+                    <Logo />
+                    <hr />
+                    <Nav />
+                </div>
             </Menu>
             <header className="header">
-                <img onClick={()=>{
-                    navigate('/')
-                }} className='icon' src={icon}/>
+                <img
+                    onClick={() => {
+                        navigate('/')
+                    }}
+                    className="icon"
+                    src={icon}
+                />
             </header>
-    
-
         </React.Fragment>
     )
-
 }

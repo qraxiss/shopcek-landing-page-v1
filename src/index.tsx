@@ -4,11 +4,10 @@ import './assets/scss/index.scss'
 import App from './app'
 import reportWebVitals from './reportWebVitals'
 
-
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
     <React.StrictMode>
-          <App />
+        <App />
         {/* <div className="bg"></div> */}
     </React.StrictMode>
 )

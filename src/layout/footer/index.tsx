@@ -11,7 +11,6 @@ import { useNavigate } from 'react-router'
 
 import gray from '../../assets/images/about/gray.svg'
 
-
 function Logo() {
     const navigate = useNavigate()
 
@@ -70,19 +69,23 @@ function Nav() {
                         </a>
                     </div>
                     <div className="pages">
-                        <a target="_blank"  href="https://drive.google.com/drive/folders/1cVDyVIY6XN5DtJ9WrjnrYfWU50jXrvYD?usp=sharing" className="page">
+                        <a
+                            target="_blank"
+                            href="https://drive.google.com/drive/folders/1cVDyVIY6XN5DtJ9WrjnrYfWU50jXrvYD?usp=sharing"
+                            className="page"
+                        >
                             MEDIA KIT
                             <img src={gray} className="out" />
                         </a>
-                        <a target="_blank"  href="https://shopcek.gitbook.io/shopcek-or-shpc-1/institutional/career" className="page">
+                        <a target="_blank" href="https://shopcek.gitbook.io/shopcek-or-shpc-1/institutional/career" className="page">
                             CAREER
                             <img src={gray} className="out" />
                         </a>
-                        <a target="_blank"  href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/terms-and-conditions" className="page">
+                        <a target="_blank" href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/terms-and-conditions" className="page">
                             TERMS OF SERVICES
                             <img src={gray} className="out" />
                         </a>
-                        <a  target="_blank" href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/privacy-policy" className="page">
+                        <a target="_blank" href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/privacy-policy" className="page">
                             PRIVACY POLICY
                             <img src={gray} className="out" />
                         </a>
@@ -119,7 +122,7 @@ function MobileNav() {
                     <a href="/#faq" className="page">
                         FAQ
                     </a>
-                    <a  target="_blank" href="https://shopcek.gitbook.io/shopcek-or-shpc-1/" className="page">
+                    <a target="_blank" href="https://shopcek.gitbook.io/shopcek-or-shpc-1/" className="page">
                         DOCS
                         <img src={gray} className="out" />
                     </a>
@@ -135,19 +138,19 @@ function MobileNav() {
 
                 <div className="pages">
                     <div className="title">MISC</div>
-                    <a target="_blank"  href="https://drive.google.com/drive/folders/1cVDyVIY6XN5DtJ9WrjnrYfWU50jXrvYD?usp=sharing" className="page">
+                    <a target="_blank" href="https://drive.google.com/drive/folders/1cVDyVIY6XN5DtJ9WrjnrYfWU50jXrvYD?usp=sharing" className="page">
                         MEDIA KIT
                         <img src={gray} className="out" />
                     </a>
-                    <a target="_blank"  href="https://shopcek.gitbook.io/shopcek-or-shpc-1/institutional/career" className="page">
+                    <a target="_blank" href="https://shopcek.gitbook.io/shopcek-or-shpc-1/institutional/career" className="page">
                         CAREER
                         <img src={gray} className="out" />
                     </a>
-                    <a target="_blank"  href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/terms-and-conditions" className="page">
+                    <a target="_blank" href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/terms-and-conditions" className="page">
                         TERMS OF SERVICES
                         <img src={gray} className="out" />
                     </a>
-                    <a target="_blank"  href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/privacy-policy" className="page">
+                    <a target="_blank" href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/privacy-policy" className="page">
                         PRIVACY POLICY
                         <img src={gray} className="out" />
                     </a>
@@ -170,13 +173,13 @@ function MobileNav() {
 function Socials() {
     return (
         <div className="socials">
-            <a target="_blank"  href="https://t.me/shopcek">
+            <a target="_blank" href="https://t.me/shopcek">
                 <img src={tg} className="social" />
             </a>
-            <a target="_blank"  href="https://x.com/shopcek">
+            <a target="_blank" href="https://x.com/shopcek">
                 <img src={x} className="social" />
             </a>
-            <a target="_blank"  href="https://medium.com/shopcek">
+            <a target="_blank" href="https://medium.com/shopcek">
                 <img src={medium} className="social" />
             </a>
         </div>

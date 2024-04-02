@@ -1,50 +1,50 @@
 {
-  "name": "landing-page",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.91",
-    "@types/react": "^18.2.73",
-    "@types/react-dom": "^18.2.23",
-    "react": "^18.2.0",
-    "react-burger-menu": "^3.0.9",
-    "react-dom": "^18.2.0",
-    "react-responsive": "^10.0.0",
-    "react-router": "^6.22.3",
-    "react-router-dom": "^6.22.3",
-    "react-scripts": "5.0.1",
-    "swiper": "^11.1.0",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "push": "npm run build && git add . && git commit -m \"build\" && git push",
-    "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\""
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "sass": "^1.72.0"
-  }
+    "name": "landing-page",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@types/jest": "^27.5.2",
+        "@types/node": "^16.18.91",
+        "@types/react": "^18.2.73",
+        "@types/react-dom": "^18.2.23",
+        "react": "^18.2.0",
+        "react-burger-menu": "^3.0.9",
+        "react-dom": "^18.2.0",
+        "react-responsive": "^10.0.0",
+        "react-router": "^6.22.3",
+        "react-router-dom": "^6.22.3",
+        "react-scripts": "5.0.1",
+        "swiper": "^11.1.0",
+        "typescript": "^4.9.5",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "push": "npm run build && git add . && git commit -m \"build\" && git push",
+        "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\""
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "sass": "^1.72.0"
+    }
 }

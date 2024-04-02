@@ -27,9 +27,7 @@ export default () => {
         <React.Fragment>
             <Routes>
                 {routes.map((item, idx) => (
-                    <Route path={item.route} key={idx} element={<Layout> {item.component} </Layout>}>
-                        
-                    </Route>
+                    <Route path={item.route} key={idx} element={<Layout> {item.component} </Layout>}></Route>
                 ))}
             </Routes>
         </React.Fragment>
