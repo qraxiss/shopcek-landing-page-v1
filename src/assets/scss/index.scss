@@ -84,8 +84,23 @@ body,html {
     box-sizing: border-box;
 }
 
+// body {
+//     position: absolute;
+// }
+
+:root                  { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+:root, body {
+  margin: 0;
+  padding: 0;
+  border: initial;
+}
+
 body {
-    position: absolute;
+  overflow: hidden;
+  width: 100lvw;
+  height: 100lvh;
 }
 
 @media only screen and (max-width: 768px) {
