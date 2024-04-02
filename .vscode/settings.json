@@ -5,7 +5,7 @@
                 "cmd": "npm run pretty"
             },
             {
-                "cmd": "npm run push",
+                "cmd": "npm run push"
             }
         ]
     }
