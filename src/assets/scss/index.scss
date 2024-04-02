@@ -75,13 +75,19 @@ body {
     }
 
     .bg {
-        background: url('../images/mobile-background.png') no-repeat center 0;
+        position: unset;
+        background: unset; 
+        background-color: unset;
     }
 
-    body {
+    html, body {
         background: url('../images/mobile-background.png');
         background-color: rgba(255, 255, 255, 0.4) !important;
         background-blend-mode: lighten;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+        -webkit-background-size: cover;
+        background-size: cover;
     }
-    
 }
