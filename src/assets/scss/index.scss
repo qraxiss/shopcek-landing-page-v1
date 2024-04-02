@@ -113,9 +113,9 @@ body {
         content: '';
         width: 100%;
         height: 100%;
-        background-position: inherit;
+        background-position: fixed;
         background-image: url('../images/mobile-background.png');
-        background-size: inherit;
+        background-size: 100%;
         background-attachment: inherit;
         background-repeat: inherit;
         position: fixed;
