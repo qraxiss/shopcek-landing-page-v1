@@ -31,12 +31,17 @@ const data = [
                 <p>Shopcek introduces a range of features designed to enhance the e-commerce experience through blockchain technology:</p>
                 <ul>
                     <li>
-                        Crypto Payment Discounts: Users benefit from discounts on purchases made with cryptocurrencies, encouraging the use of digital
-                        currencies.
+                        Diverse Cryptocurrency and Network Payment Options: Shopcek supports payments in many cryptocurrencies across different
+                        networks.
+                    </li>
+                    <li>Crypto Payment Discounts: Users benefit from discounts on purchases made with cryptocurrencies.</li>
+                    <li>
+                        Blockchain-Recorded Sales: Leveraging NFT technology, all sales are recorded on the blockchain, ensuring transparency and
+                        security for every transaction.
                     </li>
                     <li>
-                        Focus on UI & UX: High priority is given to user interface and user experience, ensuring a seamless payment and shopping
-                        process for all users.
+                        Focus on UI & UX: High priority is given to user interface and user experience, for a seamless payment and shopping process
+                        for all users.
                     </li>
                     <li>
                         Comprehensive Loyalty Program: A gamified airdrop program where users earn XP for activities on the platform. This XP can be
@@ -46,14 +51,10 @@ const data = [
                         Shopcek Domain NFTs: Users can own Shopcek Domain NFTs, granting them lifetime priority in platform rewards and airdrops.
                         These domains also have a multiplier effect on XP rewards, enhancing user engagement.
                     </li>
+
                     <li>
                         Fully Integrated Native Token - SHPC: The SHPC token is integrated throughout the platform, facilitating transactions,
-                        offering discounts, and playing a crucial role in the loyalty program. Additionally, SHPC enables advanced staking options for
-                        projects, influencers, as well as customers, enhancing platform engagement and offering valuable benefits to its users.
-                    </li>
-                    <li>
-                        Blockchain-Recorded Sales: Leveraging NFT technology, all sales are recorded on the blockchain, ensuring transparency and
-                        security for every transaction.
+                        offering discounts, advanced staking options and playing a crucial role in the loyalty program.
                     </li>
                 </ul>
             </div>
@@ -64,12 +65,15 @@ const data = [
         text: (
             <div className="text">
                 <p>
-                Refill Solution: Shopcek Refill allows users to buy mobile top-ups, gift cards, e-gifts, and vouchers with cryptocurrencies, enhancing
-                the practical use of digital assets in everyday transactions. This service is a step towards habitual cryptocurrency usage, laying the
-                groundwork for the full marketplace. Marketplace Strategy: Shopcek aims to develop into a comprehensive e-commerce platform where
-                users can effortlessly be both sellers and buyers, using cryptocurrencies for transactions. The strategy focuses on gradual blockchain
-                integration and leveraging data from Merch and Refill initiatives to tailor the marketplace to user preferences, aiming for a
-                commissionless e-commerce environment.
+                    Refill Solution: Shopcek Refill allows users to buy mobile top-ups, gift cards, e-gifts, and vouchers with cryptocurrencies,
+                    enhancing the practical use of digital assets in everyday transactions. This service is a step towards habitual cryptocurrency
+                    usage, laying the groundwork for the full marketplace.
+                </p>
+                <p>
+                    Marketplace Strategy: Shopcek aims to develop into a comprehensive e-commerce platform where users can effortlessly be both
+                    sellers and buyers, using cryptocurrencies for transactions. The strategy focuses on gradual blockchain integration and leveraging
+                    data from Merch and Refill initiatives to tailor the marketplace to user preferences, aiming for a commissionless e-commerce
+                    environment.
                 </p>
             </div>
         )
@@ -81,7 +85,7 @@ const data = [
                 <p>
                     The Shopcek Airdrop Program plays a crucial role in enhancing user engagement and broadening our community through a dedicated
                     "Earn" feature on our platform. This feature rewards users with XP points for participating in various activities, which can later
-                    be exchanged for our native token, SHPC, upon its launch.
+                    be convertible to our native token, SHPC, upon its launch.
                 </p>
 
                 <p>
@@ -94,14 +98,13 @@ const data = [
                 <p>
                     It integrates a mix of off-chain activities like referrals and social media engagement with on-chain activities, including daily
                     logins and active engagement on the website. A distinctive feature of Shopcek is the chance for users to own Shopcek Domain NFTs,
-                    which enhances platform engagement and grants lifetime priority in rewards and airdrops. This initiative encourages deeper
-                    community integration and motivates users with XP multipliers.
+                    which grants lifetime priority in rewards and airdrops. This initiative also encourages deeper community integration and motivates
+                    users with XP multipliers.
                 </p>
 
                 <p>
                     The Shopcek Airdrop Program is central to our mission of integrating blockchain technology with e-commerce, creating a rewarding
-                    experience for our community. By incentivizing a comprehensive range of activities, the program lays a solid foundation for the
-                    continuous growth and engagement of the Shopcek & its community.
+                    experience for our community.
                 </p>
             </div>
         )
@@ -131,8 +134,8 @@ const data = [
                     </li>
 
                     <li>
-                        Credit Card Payments: While credit card transactions are supported, our platform aims to offer an experience that highlights
-                        the advantages of crypto payments, encouraging a shift towards cryptocurrency as the preferred payment method.
+                        Crypto Payment Gateways: We're integrating with payment gateways like Binance Pay, Gate Pay, and Crypto.com Pay to enhance
+                        platform convenience. Collaborative discounts of 3% to 10% are provided, encouraging the use of these trusted gateways.
                     </li>
                 </ol>
             </div>
@@ -167,21 +170,20 @@ export function Faq() {
 
                         <div className="questions">
                             {data.map((item: any, idx: number) => {
-
                                 return (
                                     <div
-                                        className={`box ${state[idx]?'active':''}`}
+                                        className={`box ${state[idx] ? 'active' : ''}`}
                                         onClick={() => {
                                             setReverse(idx)
                                         }}
                                     >
                                         <div className="top">
-                                        <div className="title">{item.title}</div>
-                                        
-                                        <img src={state[idx]?minus:plus} alt="" />
+                                            <div className="title">{item.title}</div>
+
+                                            <img src={state[idx] ? minus : plus} alt="" />
                                         </div>
 
-                                        {state[idx]?item.text:undefined}
+                                        {state[idx] ? item.text : undefined}
                                     </div>
                                 )
                             })}
