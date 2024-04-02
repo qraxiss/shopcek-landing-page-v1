@@ -178,10 +178,10 @@ export function Footer() {
                     <div className="top">
                         <Logo />
                         {nav}
-                        <Socials />
+                        {isPhone?<Socials />:undefined}
                     </div>
+                    {isPhone?undefined:<Socials />}
                     <hr className="mid" />
-
                     {bottom}
                 </div>
             </footer>
