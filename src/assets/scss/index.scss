@@ -78,10 +78,6 @@ html {
     width: 100%;
 }
 
-// body {
-//     position: absolute;
-// }
-
 @media only screen and (max-width: 768px) {
     .container {
         width: 95%;
@@ -92,42 +88,10 @@ html {
         background: url('../images/mobile-background.png') no-repeat center 0;
     }
 
-    // html, body{
-    //     background-repeat: no-repeat;
-    //     background-attachment: unset;
-    //     background-position: center;
-    //     // background-size: cover;
-
-    //     -webkit-background-size: cover;
-    //     -moz-background-size: cover;
-    //     -o-background-size: cover;
-    //     background-size: 100%;
-    //     background-color: rgba(255, 255, 255, 0.4) !important;
-    //     background-blend-mode: lighten;
-
-    //     // left: 0;
-    //     // top: 0;
-
-    //     // width: 100vw;
-    //     // height: 100vh;
-
-    //     background: url('../images/mobile-background.png') no-repeat center 0;
-    // }
-
-    // html,
-    // body {
-    //     content: '';
-    //     background-image: url('../images/mobile-background.png');
-    //     background-position: fixed;
-    //     z-index: -1;
-    //     // padding-bottom: env(safe-area-inset-/bottom);
-    // }
-
     body,
     html {
         content: '';
         display: block;
-        // position: fixed;
         left: 0;
         top: 0;
         width: 100%;
