@@ -24,7 +24,8 @@
     }
 
     .top {
-        display: flex;
+        display: inline-block;
+        justify-content: flex-end;
     }
 }
 
