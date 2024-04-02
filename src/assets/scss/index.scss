@@ -118,6 +118,7 @@ html {
     body {
         content: '';
         background-image: url('../images/mobile-background.png');
+        background-position: fixed;
         z-index: -1;
         // padding-bottom: env(safe-area-inset-/bottom);
     }
