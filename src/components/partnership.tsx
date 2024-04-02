@@ -25,7 +25,7 @@ export function Partnership() {
             formik.handleChange(value)
         }
 
-        const [open, setOpen] = useState(false)
+        const [open, setOpen] = useState(true)
 
         useEffect(() => {
             if (sendInformationGQL.status) {
@@ -128,7 +128,7 @@ export function Partnership() {
                         </div>
                     </div>
                     <img src={handshake} className="handshake" />
-                    <Popup className="success-popup" open={true}>
+                    <Popup className="success-popup" open={open}>
                         <div className="top">
                             <img
                                 onClick={() => {
