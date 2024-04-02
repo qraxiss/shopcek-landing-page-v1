@@ -125,8 +125,9 @@ export function Partnership() {
                         </div>
                     </div>
                     <img src={handshake} className="handshake" />
-                    <Popup className="test" open={open}>
-                        Başarılı
+                    <Popup className="success-popup" open={true}>
+                        <div className="title">Success</div>
+                        <p>Your information successfully sended.</p>
                     </Popup>
                 </section>
             </React.Fragment>
