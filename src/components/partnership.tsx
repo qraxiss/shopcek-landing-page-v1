@@ -142,6 +142,8 @@ export function Partnership() {
 
                         <div className="title">Success</div>
                         <p>Your information successfully sended.</p>
+
+                        <img src={checked} alt="" className="checked" />
                     </Popup>
                 </section>
             </React.Fragment>
