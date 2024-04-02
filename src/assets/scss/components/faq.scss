@@ -79,17 +79,15 @@
                     }
                 }
 
-                .box.extended {
-                    height: 10rem;
+                .box.active {
+                    padding-top: 1rem;
                 }
+
             }
         }
 
         img.question {
-            // position: relative;
             width: 50%;
-            // left: 40em;
-            // bottom: -5em;
         }
     }
 }
@@ -105,16 +103,31 @@
             }
 
             .info {
-                text-align: left;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
                 width: 90%;
-                // align-items: center;
+
+
 
                 .box {
+                    height: 3rem;
+                    // align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+
                     .text {
                         text-align: left;
                         font-size: 0.85em;
                     }
+                }
 
+                .box.active {
+                    height: unset;
                 }
             }
         }

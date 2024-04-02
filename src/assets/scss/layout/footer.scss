@@ -112,14 +112,11 @@ footer {
 
     }
 
-    // hr {
-    //     border-width: 0px 0px 1px 0px;
-    //     border-color: #ffffff;
-    //     position: relative;
-    //     top: -.6rem;
-    //     left: -3rem;
-    //     width: 150%;
-    // }
+    .socials {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.2rem;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -127,14 +124,11 @@ footer {
         padding-top: 3rem;
         padding-bottom: 1rem;
 
-        .logo {
-            padding-bottom: 1.2rem;
-        }
-
         .container {
             display: flex;
             flex-direction: column;
             gap: 0.6rem;
+            align-items: center;
         }
 
         .bottom {
@@ -156,16 +150,16 @@ footer {
         }
 
         .top {
-            display: unset;
+            width: 90%;
+            display: flex;
             flex-direction: column;
-            align-items: center;
-            gap: 1rem;
+            gap: 3rem;
 
             .nav {
                 width: unset;
                 flex-direction: column;
                 display: flex;
-                gap: 1rem;
+                gap: 1.5rem;
 
                 .pages {
                     display: flex;
@@ -193,6 +187,22 @@ footer {
                         }
                     }
                 }
+            }
+        }
+
+        .bottom {
+            .text {
+                font-size: 0.8em;
+            }
+        }
+
+        .socials {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1.2rem;
+
+            .social {
+                height: 2.5rem;
             }
         }
     }

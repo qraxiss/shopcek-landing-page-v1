@@ -44,14 +44,19 @@
 
 /* General sidebar styles */
 .bm-menu {
+    height: 53% !important;
+    border-radius: 0 20px 20px 0;
+    border: #ffffff solid;
+    border-width: 0px 1px 1px 0px;
+
 
     .menu {
         margin-top: -5rem;
     }
     
-    background: url('../../images/background.svg') no-repeat center 0;
+    background: url('../../images/mobile-background.png') no-repeat center 0;
     background-size: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     background-blend-mode: lighten;
     padding: 2.5em 1.5em 0;
     font-size: 1.1rem;
@@ -84,10 +89,10 @@
         padding-bottom: 1rem;
 
         img {
-            max-height: 2.3rem;
+            max-height: 2.8rem;
         }
         img.text {
-            height: 1.6rem;
+            height: 2rem;
         }
     }
 

@@ -8,7 +8,7 @@ export function Nav() {
             <a href='/#services' className="title">SERVICES</a>
             <a href='/#partnership' className="title">PARTNERSHIP</a>
             <a href='/#faq' className="title">FAQ</a>
-            <a href='https://shopcek.gitbook.io//Users/qraxiss/Documents/shopcek.com/frontend/public/favicon.ico-or-shpc-1/' className="title">DOCS</a>
+            <a href='https://shopcek.gitbook.io/' className="title">DOCS</a>
             <div className="launch-app">
                 <div className="title">LAUNCH APP</div>
             </div>

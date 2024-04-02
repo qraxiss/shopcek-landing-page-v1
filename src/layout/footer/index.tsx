@@ -4,6 +4,10 @@ import icon from '../../assets/images/icon.svg'
 import text from '../../assets/images/text.svg'
 import { useMediaQuery } from 'react-responsive'
 
+import x from '../../assets/images/socials/x.svg'
+import tg from '../../assets/images/socials/tg.svg'
+import medium from '../../assets/images/socials/medium.svg'
+
 function Logo() {
     return (
         <div className="logo">
@@ -31,17 +35,33 @@ function Nav() {
             <div className="row">
                 <div className="left">
                     <div className="pages">
-                        <a href='/#services' className="page">SERVICES</a>
-                        <a href='/#partnership' className="page">PARTNERSHIP</a>
-                        <a href='/#faq' className="page">FAQ</a>
-                        <a href='https://shopcek.gitbook.io/shopcek-or-shpc-1/' className="page">DOCS</a>
+                        <a href="/#services" className="page">
+                            SERVICES
+                        </a>
+                        <a href="/#partnership" className="page">
+                            PARTNERSHIP
+                        </a>
+                        <a href="/#faq" className="page">
+                            FAQ
+                        </a>
+                        <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/" className="page">
+                            DOCS
+                        </a>
                         <a className="page">LAUNCH APP</a>
                     </div>
                     <div className="pages">
-                        <a href='https://drive.google.com/drive/folders/1cVDyVIY6XN5DtJ9WrjnrYfWU50jXrvYD?usp=sharing' className="page">BRAND</a>
-                        <a href='https://shopcek.gitbook.io/shopcek-or-shpc-1/institutional/career' className="page">CAREER</a>
-                        <a href='https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/terms-and-conditions'  className="page">TERMS OF SERVICES</a>
-                        <a href='https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/privacy-policy' className="page">PRIVACY POLICY</a>
+                        <a href="https://drive.google.com/drive/folders/1cVDyVIY6XN5DtJ9WrjnrYfWU50jXrvYD?usp=sharing" className="page">
+                            MEDIA KIT
+                        </a>
+                        <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/institutional/career" className="page">
+                            CAREER
+                        </a>
+                        <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/terms-and-conditions" className="page">
+                            TERMS OF SERVICES
+                        </a>
+                        <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/privacy-policy" className="page">
+                            PRIVACY POLICY
+                        </a>
                     </div>
                 </div>
 
@@ -64,19 +84,35 @@ function MobileNav() {
             <div className="nav">
                 <div className="pages">
                     <div className="title">SHOPCEK</div>
-                    <div className="page">SERVICES</div>
-                    <div className="page">PARTNERSHIP</div>
-                    <div className="page">FAQ</div>
-                    <div className="page">DOCS</div>
+                    <a href="/#services" className="page">
+                        SERVICES
+                    </a>
+                    <a href="/#partnership" className="page">
+                        PARTNERSHIP
+                    </a>
+                    <a href="/#faq" className="page">
+                        FAQ
+                    </a>
+                    <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/" className="page">
+                        DOCS
+                    </a>
                     <div className="page">LAUNCH APP</div>
                 </div>
 
                 <div className="pages">
                     <div className="title">MISC</div>
-                    <div className="page">BRAND</div>
-                    <div className="page">CAREER</div>
-                    <div className="page">TERMS OF SERVICES</div>
-                    <div className="page">PRIVACY POLICY</div>
+                    <a href="https://drive.google.com/drive/folders/1cVDyVIY6XN5DtJ9WrjnrYfWU50jXrvYD?usp=sharing" className="page">
+                        MEDIA KIT
+                    </a>
+                    <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/institutional/career" className="page">
+                        CAREER
+                    </a>
+                    <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/terms-and-conditions" className="page">
+                        TERMS OF SERVICES
+                    </a>
+                    <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/legal/privacy-policy" className="page">
+                        PRIVACY POLICY
+                    </a>
                 </div>
 
                 <div className="newsletter">
@@ -89,8 +125,23 @@ function MobileNav() {
                     </div>
                 </div>
             </div>
-
         </React.Fragment>
+    )
+}
+
+function Socials() {
+    return (
+        <div className="socials">
+            <a href="https://x.com/shopcek">
+                <img src={tg} className="social" />
+            </a>
+            <a href="https://t.me/shopcek">
+                <img src={x} className="social" />
+            </a>
+            <a href="https://medium.com/shopcek">
+                <img src={medium} className="social" />
+            </a>
+        </div>
     )
 }
 
@@ -101,10 +152,24 @@ export function Footer() {
     useEffect(() => {
         if (isPhone) {
             setNav(<MobileNav />)
+            setBottom(
+                <div className="bottom">
+                    <div className="text">Developed for the transition of the next billion to crypto</div>
+                    <div className="text">Copyright 2024 SHOPCEK-All Rights Reserved</div>
+                </div>
+            )
         } else {
             setNav(<Nav />)
+            setBottom(
+                <div className="bottom">
+                    <div className="text">Copyright 2024 SHOPCEK-All Rights Reserved</div>
+                    <div className="text">Developed for the transition of the next billion to crypto</div>
+                </div>
+            )
         }
     }, [isPhone])
+
+    const [bottom, setBottom] = useState<any>()
 
     return (
         <React.Fragment>
@@ -113,14 +178,11 @@ export function Footer() {
                     <div className="top">
                         <Logo />
                         {nav}
+                        <Socials />
                     </div>
-
                     <hr className="mid" />
 
-                    <div className="bottom">
-                        <div className="text">Copyright 2024 SHOPCEK-All Rights Reserved</div>
-                        <div className="text">It was developed to accelerate the transition of the next billion to crypto</div>
-                    </div>
+                    {bottom}
                 </div>
             </footer>
         </React.Fragment>

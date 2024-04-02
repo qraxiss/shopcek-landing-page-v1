@@ -143,12 +143,19 @@
             flex-direction: column;
             gap: 2rem;
 
+            .apply {
+                input {
+                    font-size: 0.7em;
+                    padding-left: .9rem;
+                }
+            } 
+
             .info {
-                width: 75%;
+                width: 85%;
             }
 
             .apply {
-                width: 75%;
+                width: 90%;
             }
         }
         img {

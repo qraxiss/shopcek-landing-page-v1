@@ -14,7 +14,6 @@ const data = [
                     introduces the Refill service, which encourages the use of cryptocurrencies for everyday purchases such as gift cards and top-ups,
                     making the process familiar and straightforward for users.
                 </p>
-
                 <p>
                     The journey from curated merchandise offerings to a functional Refill service is a strategic step towards Shopcek's vision of
                     becoming a comprehensive marketplace. This envisioned marketplace is entirely integrated with blockchain technology, aiming to
@@ -29,7 +28,7 @@ const data = [
         title: 'What are the key features of Shopcek?',
         text: (
             <div className="text">
-                Shopcek introduces a range of features designed to enhance the e-commerce experience through blockchain technology:
+                <p>Shopcek introduces a range of features designed to enhance the e-commerce experience through blockchain technology:</p>
                 <ul>
                     <li>
                         Crypto Payment Discounts: Users benefit from discounts on purchases made with cryptocurrencies, encouraging the use of digital
@@ -64,12 +63,14 @@ const data = [
         title: 'What are the Refill & Marketplace Strategies?',
         text: (
             <div className="text">
+                <p>
                 Refill Solution: Shopcek Refill allows users to buy mobile top-ups, gift cards, e-gifts, and vouchers with cryptocurrencies, enhancing
                 the practical use of digital assets in everyday transactions. This service is a step towards habitual cryptocurrency usage, laying the
                 groundwork for the full marketplace. Marketplace Strategy: Shopcek aims to develop into a comprehensive e-commerce platform where
                 users can effortlessly be both sellers and buyers, using cryptocurrencies for transactions. The strategy focuses on gradual blockchain
                 integration and leveraging data from Merch and Refill initiatives to tailor the marketplace to user preferences, aiming for a
                 commissionless e-commerce environment.
+                </p>
             </div>
         )
     },
@@ -169,7 +170,7 @@ export function Faq() {
 
                                 return (
                                     <div
-                                        className="box"
+                                        className={`box ${state[idx]?'active':''}`}
                                         onClick={() => {
                                             setReverse(idx)
                                         }}

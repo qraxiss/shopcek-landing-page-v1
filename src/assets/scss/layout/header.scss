@@ -11,7 +11,7 @@ header.header {
     align-items: center;
     justify-content: center;
 
-    // background: transparent linear-gradient(94deg, #FFFFFF30 0%, #FFFFFF8C 24%, #FFFFFF17 68%, #FFFFFF82 100%) 0% 0% no-repeat padding-box;
+    // background: transparent  0% 0% no-repeat padding-box;
 
     .container {
         display: flex;
@@ -20,11 +20,11 @@ header.header {
     }
 
     background: url('../../images/header-background.svg')  no-repeat center 0;
-    background-color: linear-gradient(94deg, #FFFFFF30 0%, #FFFFFF8C 24%, #FFFFFF17 68%, #FFFFFF82 100%);
-    background-blend-mode: lighten;
     
-    background-size: 100%;
+    background-color: rgba(255,255,255,0.30);
     background-blend-mode: lighten;
+
+    background-size: 100%;
     border-bottom: .6px white solid;
     z-index: 999;
 

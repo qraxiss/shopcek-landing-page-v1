@@ -89,7 +89,7 @@ export function Slider() {
                         <SwiperSlide className="swiper-slide">
                             <img src={img2} alt="" />
                             <div className="content">
-                                <div className="title">BLOCKCHAIN FORWARD: E-COMMERCE INNOVATED</div>
+                                <div className="title">E-commerce Transformed by Web3 Tech</div>
                                 <hr />
                                 <div className="text">
                                     Through NFT receipts, multiple accepted cryptocurrencies, and with fully integrated native token, we're innovating

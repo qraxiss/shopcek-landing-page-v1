@@ -5,8 +5,8 @@ import handshake from '../assets/images/partnership/handshake.png'
 export function Partnership() {
     return (
         <React.Fragment>
-            <section className='partnership-page'>
-                <div className="partnership" id='partnership'>
+            <section className="partnership-page">
+                <div className="partnership" id="partnership">
                     <div className="info">
                         <div className="title">PARTNERSHIP</div>
 
@@ -43,8 +43,8 @@ export function Partnership() {
                         </div>
 
                         <div className="info-text">
-                            *Our mission is to transform your online presence into a dynamic e-commerce store, enriched with tools and services
-                            tailored to enhance your brand.
+                            *Once we've reviewed your application, our team will be in touch to discuss the next steps. Thank you for reaching out to
+                            us.
                         </div>
                     </div>
                 </div>
