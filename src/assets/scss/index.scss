@@ -102,6 +102,9 @@ body {
         position: fixed;
         content: "";
 
+        background-color: rgba(255, 255, 255, 0.4) !important;
+        background-blend-mode: lighten;
+
         left: 0;
         top: 0;
 
@@ -124,6 +127,9 @@ body {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+
+        background-color: rgba(255, 255, 255, 0.4) !important;
+        background-blend-mode: lighten;
 
         display: block;
         position: fixed;
