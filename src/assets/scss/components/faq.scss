@@ -72,8 +72,9 @@
                     }
 
                     .text {
-                        ol, ul {
-                            list-style-type:disc;
+                        ol,
+                        ul {
+                            list-style-type: disc;
                         }
                         font-size: 1em;
                     }
@@ -82,7 +83,6 @@
                 .box.active {
                     padding-top: 1rem;
                 }
-
             }
         }
 
@@ -110,15 +110,12 @@
                 text-align: center;
                 width: 90%;
 
-
-
                 .box {
                     height: 3rem;
                     // align-items: center;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-
 
                     .text {
                         text-align: left;

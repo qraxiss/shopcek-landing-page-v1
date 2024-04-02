@@ -7,29 +7,24 @@ section.swiper-page {
         padding-bottom: 3em;
     }
 
-
-
-
     hr {
         margin-top: 0.7rem;
         margin-bottom: 0.7rem;
         border-width: 0px 0px 1px 0px;
         height: 0;
         border-color: #000000;
-
     }
 
-    
     .swiper-wrapper {
         img {
-            height: 30rem ;
+            height: 30rem;
         }
         .swiper-slide {
             // justify-content: space-between;
             align-items: center;
             display: flex;
             flex-direction: column;
-            gap: .1em;
+            gap: 0.1em;
         }
 
         .content {
@@ -39,7 +34,6 @@ section.swiper-page {
             display: flex;
             flex-direction: column;
         }
-    
 
         .title {
             font-size: 1.3em;
@@ -73,7 +67,7 @@ section.swiper-page {
         width: 76px !important;
         height: 3px !important;
         border-radius: 3px !important;
-        background: #ffffff ;
+        background: #ffffff;
         opacity: unset !important;
         background-clip: content-box;
         padding: 1rem 0rem;
@@ -82,8 +76,6 @@ section.swiper-page {
     .swiper-pagination-bullet-active {
         background: black;
         background-clip: content-box;
-
-
     }
 }
 
@@ -96,9 +88,7 @@ section.swiper-page {
 
         padding-bottom: 1em;
     }
-
 }
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -110,9 +100,8 @@ section.swiper-page {
                 width: 95% !important;
                 height: 50%;
             }
-            
+
             .text {
-                
             }
         }
 
@@ -130,6 +119,4 @@ section.swiper-page {
         font-size: 1rem;
         margin-bottom: 15em;
     }
-
-    
 }

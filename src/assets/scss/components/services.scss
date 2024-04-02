@@ -6,7 +6,7 @@ section.services-page {
     gap: 1.5rem;
     margin-top: -25rem;
 
-    img.icons{
+    img.icons {
         position: relative;
         width: 125%;
         object-fit: cover;
@@ -19,36 +19,36 @@ section.services-page {
         gap: 2rem;
 
         .box {
-            padding: 2.5rem .6rem;
+            padding: 2.5rem 0.6rem;
             width: 36%;
             height: auto;
             background: transparent linear-gradient(131deg, #ffffff6b 0%, #ffffff8c 24%, #ffffff17 68%, #ffffffa8 100%) 0% 0% no-repeat padding-box;
             border: 2px solid #ffffff;
             border-radius: 27px;
             opacity: 1;
-    
+
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 0.6rem;
-    
+
             .title {
                 font-size: 1.42rem;
                 font-weight: 500;
                 color: #000000;
             }
-    
+
             .sub-title {
                 font-weight: 200;
                 font-size: 1.22rem;
                 color: #000000;
             }
-    
+
             .text {
                 width: 100%;
                 color: #707070;
             }
-    
+
             hr {
                 width: 20%;
                 height: 0;
@@ -56,11 +56,10 @@ section.services-page {
                 border-radius: 10px;
                 border: 0;
             }
-    
+
             img {
                 padding-top: 2rem;
-                    height: 6em;
-                
+                height: 6em;
             }
         }
     }
@@ -90,35 +89,29 @@ section.services-page {
 }
 
 @media only screen and (max-width: 1200px) {
-    img.icons{
+    img.icons {
         opacity: 0;
         width: 0;
-    } 
-
+    }
 
     .services-page {
-        
-
         .sub-title {
             text-align: center;
         }
-    
+
         hr {
             width: 50% !important;
         }
         .text {
-            width: 97% !important
+            width: 97% !important;
         }
     }
 
-    
     .services {
         width: 90%;
         margin-top: unset !important;
         flex-direction: column !important;
         align-items: center;
-
-
 
         .box {
             width: 97% !important;
@@ -126,6 +119,3 @@ section.services-page {
         // width: 30rem !important;
     }
 }
-
-
-
