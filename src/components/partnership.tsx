@@ -27,6 +27,21 @@ export function Partnership() {
             formik.handleChange(value)
         }
 
+        const [open, setOpen] = useState(false)
+
+        useEffect(() => {
+            if (sendInformationGQL.status) {
+                switch (sendInformationGQL.status) {
+                    case 'success': {
+                        console.log(sendInformationGQL.data)
+                        if (sendInformationGQL.data === true) {
+                            setOpen(true)
+                        }
+                    }
+                }
+            }
+        }, [sendInformationGQL.status])
+
         return (
             <React.Fragment>
                 <section className="partnership-page">
@@ -115,7 +130,7 @@ export function Partnership() {
                         </div>
                     </div>
                     <img src={handshake} className="handshake" />
-                    <Popup className="test" open={true}>
+                    <Popup className="test" open={open}>
                         <div>GeeksforGeeks</div>
                         <button>Click here</button>
                     </Popup>

@@ -1,7 +1,7 @@
-import { useMutation } from '@apollo/client'
+import { useMutation } from '../../../lib/query-wrapper'
 
 export type apply = {
-    sendInformationGQL: ReturnType<useMutation<sendInformation>>
+    sendInformationGQL: ReturnType<typeof useMutation<sendInformation>>
 }
 
 export type sendInformation = boolean
