@@ -130,7 +130,14 @@ export function Partnership() {
                     <img src={handshake} className="handshake" />
                     <Popup className="success-popup" open={true}>
                         <div className="top">
-                            <img src={close} alt="" className="close" />
+                            <img
+                                onClick={() => {
+                                    setOpen(false)
+                                }}
+                                src={close}
+                                alt=""
+                                className="close"
+                            />
                         </div>
 
                         <div className="title">Success</div>
