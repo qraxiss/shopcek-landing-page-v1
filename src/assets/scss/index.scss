@@ -121,7 +121,8 @@ html {
     body {
         content: '';
         // width: 100%;
-        min-height: -webkit-fill-available;
+        // min-height: -webkit-fill-available;
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
         background-position: fixed;
         background-image: url('../images/mobile-background.png');
         background-size: 100%;
@@ -130,6 +131,6 @@ html {
         // position: fixed;
         top: 0;
         z-index: -1;
-        padding-bottom: env(safe-area-inset-bottom);
+        // padding-bottom: env(safe-area-inset-/bottom);
     }
 }
