@@ -48,7 +48,7 @@ export function Partnership() {
                         </div>
                     </div>
                 </div>
-                <img src={handshake} alt="" />
+                <img src={handshake} className='handshake' />
             </section>
         </React.Fragment>
     )

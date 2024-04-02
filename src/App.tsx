@@ -1,20 +1,17 @@
 import './assets/scss/app.scss'
-import { Layout } from './layout'
-import { Slider } from './components/swiper'
-import { Services } from './components/services'
-import { Partnership } from './components/partnership'
-import { Faq } from './components/faq'
 import React from 'react'
+
+import { BrowserRouter } from 'react-router-dom'
+import Routes from './routes'
+import ScrollToTop from './layout/auto-scroll'
 
 function App() {
     return (
         <React.Fragment>
-            <Layout>
-                <Slider />
-                <Services/>
-                <Partnership/>
-                <Faq/>
-            </Layout>
+            <BrowserRouter>
+            <ScrollToTop/>
+                <Routes />
+            </BrowserRouter>
         </React.Fragment>
     )
 }

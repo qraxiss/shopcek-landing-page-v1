@@ -7,10 +7,15 @@ import { useMediaQuery } from 'react-responsive'
 import x from '../../assets/images/socials/x.svg'
 import tg from '../../assets/images/socials/tg.svg'
 import medium from '../../assets/images/socials/medium.svg'
+import { useNavigate } from 'react-router'
 
 function Logo() {
+    const navigate = useNavigate()
+
     return (
-        <div className="logo">
+        <div onClick={()=>{
+            navigate('/')
+        }} className="logo">
             <img className="icon" src={icon} />
             <img className="text" src={text} />
         </div>
@@ -18,6 +23,7 @@ function Logo() {
 }
 
 function Nav() {
+    const navigate = useNavigate()
     return (
         <div className="nav">
             <div className="row">
@@ -47,7 +53,9 @@ function Nav() {
                         <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/" className="page">
                             DOCS
                         </a>
-                        <a className="page">LAUNCH APP</a>
+                        <div                         onClick={() => {
+                            navigate('/launch-app')
+                        }} className="page">LAUNCH APP</div>
                     </div>
                     <div className="pages">
                         <a href="https://drive.google.com/drive/folders/1cVDyVIY6XN5DtJ9WrjnrYfWU50jXrvYD?usp=sharing" className="page">
@@ -79,6 +87,8 @@ function Nav() {
 }
 
 function MobileNav() {
+    const navigate = useNavigate()
+
     return (
         <React.Fragment>
             <div className="nav">
@@ -96,7 +106,14 @@ function MobileNav() {
                     <a href="https://shopcek.gitbook.io/shopcek-or-shpc-1/" className="page">
                         DOCS
                     </a>
-                    <div className="page">LAUNCH APP</div>
+                    <div
+                        onClick={() => {
+                            navigate('/launch-app')
+                        }}
+                        className="page"
+                    >
+                        LAUNCH APP
+                    </div>
                 </div>
 
                 <div className="pages">
@@ -132,10 +149,10 @@ function MobileNav() {
 function Socials() {
     return (
         <div className="socials">
-            <a href="https://x.com/shopcek">
+            <a href="https://t.me/shopcek">
                 <img src={tg} className="social" />
             </a>
-            <a href="https://t.me/shopcek">
+            <a href="https://x.com/shopcek">
                 <img src={x} className="social" />
             </a>
             <a href="https://medium.com/shopcek">
@@ -178,9 +195,9 @@ export function Footer() {
                     <div className="top">
                         <Logo />
                         {nav}
-                        {isPhone?<Socials />:undefined}
+                        {isPhone ? <Socials /> : undefined}
                     </div>
-                    {isPhone?undefined:<Socials />}
+                    {isPhone ? undefined : <Socials />}
                     <hr className="mid" />
                     {bottom}
                 </div>

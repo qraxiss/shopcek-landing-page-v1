@@ -5,8 +5,11 @@ import icon from '../../assets/images/icon.svg'
 import text from '../../assets/images/text.svg'
 
 import { Nav,Logo } from './web'
+import { useNavigate } from 'react-router'
 
 export function Header() {
+    const navigate = useNavigate()
+
     return (
         <React.Fragment>
             <Menu>
@@ -17,7 +20,9 @@ export function Header() {
                </div>
             </Menu>
             <header className="header">
-                <img className='icon' src={icon}/>
+                <img onClick={()=>{
+                    navigate('/')
+                }} className='icon' src={icon}/>
             </header>
     
 

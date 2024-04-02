@@ -1,14 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c28fa8b.css",
-    "main.js": "/static/js/main.0e6ef065.js",
+    "main.css": "/static/css/main.7528f81d.css",
+    "main.js": "/static/js/main.e8ab198d.js",
     "static/js/453.7ee4257d.chunk.js": "/static/js/453.7ee4257d.chunk.js",
-    "static/media/question.svg": "/static/media/question.a2afda5ef3a025dd9cc137f582328727.svg",
     "static/media/mobile-background.png": "/static/media/mobile-background.5dc06e47c0f847d95f24.png",
     "static/media/background.svg": "/static/media/background.fa19d28280efb097124a.svg",
     "static/media/text.svg": "/static/media/text.59498815ed93de7d8bd13add2e6d901c.svg",
-    "static/media/1.svg": "/static/media/1.7baece21930a6b65e50c1a73cfcd192a.svg",
-    "static/media/2.svg": "/static/media/2.fe32ebbf0249a39a0471cc1dfc653d09.svg",
     "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.50f0257aa1e905f4bfaf.ttf",
     "static/media/Montserrat-SemiBold.ttf": "/static/media/Montserrat-SemiBold.93b37a465fc4ec0d0415.ttf",
     "static/media/Montserrat-Medium.ttf": "/static/media/Montserrat-Medium.b8c6753baa964ccac1ba.ttf",
@@ -16,26 +13,18 @@
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
     "static/media/Montserrat-ExtraLight.ttf": "/static/media/Montserrat-ExtraLight.d928d1131a9af02cb672.ttf",
     "static/media/icon.svg": "/static/media/icon.a1bea678671fe63a123b6c979de161ff.svg",
-    "static/media/icons.png": "/static/media/icons.07fc1d3111176cd8bdf8.png",
-    "static/media/handshake.png": "/static/media/handshake.71e88c947ee0379e09d8.png",
-    "static/media/refill.svg": "/static/media/refill.fb27f9a83448961e53576b7ab1fe49e2.svg",
+    "static/media/world.png": "/static/media/world.ea97e752f09f5512ab79.png",
     "static/media/header-background.svg": "/static/media/header-background.ca38b5160b5634831585.svg",
-    "static/media/3.svg": "/static/media/3.cb350beccb913445fdae3c4ebf77e608.svg",
-    "static/media/merch.svg": "/static/media/merch.ffc341c752214c29b97837a9cd8cf2b4.svg",
-    "static/media/shop.svg": "/static/media/shop.c6db76ae761ea3c5e210c104a3a52b3c.svg",
     "static/media/medium.svg": "/static/media/medium.84ead0e87b5d2a071415d48f298b240c.svg",
     "static/media/tg.svg": "/static/media/tg.9c49a67dc8d1adc039ccafd4b68b698c.svg",
     "static/media/x.svg": "/static/media/x.c5a25d0f504c5d64a92963593667d1c8.svg",
     "index.html": "/index.html",
-    "static/media/right.svg": "/static/media/right.8bad44345d51eadcb43f263fab23c48f.svg",
-    "static/media/left.svg": "/static/media/left.5f549b8bcd9f819f497ba3a9cdffd4a6.svg",
-    "static/media/plug.svg": "/static/media/plug.6956503f92affa37cfda30301d7ee71c.svg",
-    "main.5c28fa8b.css.map": "/static/css/main.5c28fa8b.css.map",
-    "main.0e6ef065.js.map": "/static/js/main.0e6ef065.js.map",
+    "main.7528f81d.css.map": "/static/css/main.7528f81d.css.map",
+    "main.e8ab198d.js.map": "/static/js/main.e8ab198d.js.map",
     "453.7ee4257d.chunk.js.map": "/static/js/453.7ee4257d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c28fa8b.css",
-    "static/js/main.0e6ef065.js"
+    "static/css/main.7528f81d.css",
+    "static/js/main.e8ab198d.js"
   ]
 }
