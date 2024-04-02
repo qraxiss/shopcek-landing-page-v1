@@ -115,27 +115,4 @@ body {
 
 
     }
-
-    html, body::before{
-        
-        background-repeat: no-repeat;
-        // background-attachment: fixed;
-        background-position: center; 
-        background-size: cover;
-
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-
-        background-color: rgba(255, 255, 255, 0.4) !important;
-        background-blend-mode: lighten;
-
-        // left: 0;
-        // top: 0;
-
-        // width: 100%;
-        // height: 100%;
-
-        background: url('../images/mobile-background.png') no-repeat center 0;
-    }
 }
