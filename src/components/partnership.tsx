@@ -109,6 +109,7 @@ export function Partnership() {
                                 <button
                                     id="partnershipSubmit"
                                     onClick={() => {
+                                        console.log(formik.values)
                                         sendInformationGQL.fn({
                                             variables: {
                                                 ...formik.values
@@ -133,6 +134,7 @@ export function Partnership() {
                             <img
                                 onClick={() => {
                                     setOpen(false)
+                                    formik.setValues({})
                                 }}
                                 src={close}
                                 alt=""
