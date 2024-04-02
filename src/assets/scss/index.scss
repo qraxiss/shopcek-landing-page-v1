@@ -109,9 +109,9 @@ div.root {
         content: '';
         width: 100%;
         background-image: url('../images/mobile-background.png');
-        background-size: cover;
+        background-size: inherit;
         background-attachment: inherit;
-        background-repeat: no-repeat;
+        background-repeat: inherit;
         top: 0;
         z-index: -1;
         // padding-bottom: env(safe-area-inset-/bottom);
