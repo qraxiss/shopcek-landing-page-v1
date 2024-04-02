@@ -121,7 +121,7 @@ html {
     body {
         content: '';
         // width: 100%;
-        min-height: 100dvh;
+        min-height: -webkit-fill-available;
         background-position: fixed;
         background-image: url('../images/mobile-background.png');
         background-size: 100%;
