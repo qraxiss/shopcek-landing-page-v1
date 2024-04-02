@@ -28,9 +28,9 @@ export function Partnership() {
             if (sendInformationGQL.status) {
                 switch (sendInformationGQL.status) {
                     case 'success': {
-                        console.log(sendInformationGQL.data)
                         if (sendInformationGQL.data === true) {
                             setOpen(true)
+                            formik.setValues({})
                         }
                     }
                 }
@@ -126,8 +126,7 @@ export function Partnership() {
                     </div>
                     <img src={handshake} className="handshake" />
                     <Popup className="test" open={open}>
-                        <div>GeeksforGeeks</div>
-                        <button>Click here</button>
+                        Başarılı
                     </Popup>
                 </section>
             </React.Fragment>
