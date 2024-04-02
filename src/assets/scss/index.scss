@@ -23,6 +23,8 @@ body {
 
 
 
+
+
 div.root {
     justify-content: center !important;
     display: flex !important;
@@ -68,8 +70,12 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-
     .container {
         width: 95%;
     }
+
+    .bg {
+        background: url('../images/mobile-background.png') no-repeat center 0;
+    }
+    
 }
