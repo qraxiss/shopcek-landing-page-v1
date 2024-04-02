@@ -13,7 +13,15 @@ export function Partnership() {
     function Component() {
         const { sendInformationGQL } = useApply()
 
-        const formik = useFormik({ initialValues: {}, onSubmit: console.log })
+        const formik = useFormik({
+            initialValues: {
+                partnerName: '',
+                name: '',
+                telegramHandle: '',
+                email: ''
+            },
+            onSubmit: console.log
+        })
 
         const handleChange = (value: any) => {
             console.log(value)
