@@ -98,10 +98,7 @@ export function Partnership() {
                                     onClick={() => {
                                         sendInformationGQL.fn({
                                             variables: {
-                                                email: '1tusbozuk@gmail.com',
-                                                partnerName: '1tusbozuk@gmail.com',
-                                                name: '1tusbozuk@gmail.com',
-                                                telegramHandle: '1tusbozuk@gmail.com'
+                                                ...formik.values
                                             }
                                         })
                                     }}
