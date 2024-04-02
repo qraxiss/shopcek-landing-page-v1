@@ -96,7 +96,7 @@ body {
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;
+        background-size: 100%;
 
         display: block;
         // position: fixed;
@@ -109,7 +109,7 @@ body {
         // top: 0;
 
         // width: 100vw;
-        height: 100vh;
+        // height: 100vh;
 
         background: url('../images/mobile-background.png') no-repeat center 0;
 
