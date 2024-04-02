@@ -25,6 +25,7 @@ export function Partnership() {
 
         const handleChange = (value: any) => {
             console.log(value)
+            formik.handleChange(value)
             console.log(formik.values)
         }
 
