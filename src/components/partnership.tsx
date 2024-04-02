@@ -32,7 +32,14 @@ export function Partnership() {
                 switch (sendInformationGQL.status) {
                     case 'success': {
                         if (sendInformationGQL.data === true) {
-                            formik.setValues({}).then(console.log)
+                            formik
+                                .setValues({
+                                    name: '',
+                                    telegramHandle: '',
+                                    email: '',
+                                    partnerName: ''
+                                })
+                                .then(console.log)
                             setOpen(true)
                         }
                     }
@@ -134,7 +141,6 @@ export function Partnership() {
                             <img
                                 onClick={() => {
                                     setOpen(false)
-                                    formik.setValues({})
                                 }}
                                 src={close}
                                 alt=""
