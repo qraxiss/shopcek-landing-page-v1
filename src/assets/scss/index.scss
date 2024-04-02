@@ -120,15 +120,11 @@ html {
     html,
     body {
         content: '';
-        // width: 100%;
-        // min-height: -webkit-fill-available;
-        // padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-        // background-position: ;
+        width: 100%;
         background-image: url('../images/mobile-background.png');
         background-size: 100%;
         background-attachment: inherit;
         background-repeat: no-repeat;
-        // position: fixed;
         top: 0;
         z-index: -1;
         // padding-bottom: env(safe-area-inset-/bottom);
