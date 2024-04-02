@@ -9,7 +9,7 @@ root.render(
     <React.StrictMode>
         <App />
         <div className="bg"></div>
-        <div className="bg-bottom"></div>
+        {/* <div className="bg-bottom"></div> */}
     </React.StrictMode>
 )
 
