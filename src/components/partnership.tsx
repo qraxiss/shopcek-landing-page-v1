@@ -7,11 +7,7 @@ import 'reactjs-popup/dist/index.css'
 
 import React, { useState, useRef, useEffect } from 'react'
 
-function useSubmitButton() {
-    const [submit, setSubmit] = useState(document.querySelector('#partnershipSubmit'))
-
-    useEffect(() => {})
-}
+import { Formik, Field, Form } from 'formik'
 
 export function Partnership() {
     function Component() {
