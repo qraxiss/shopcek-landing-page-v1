@@ -21,10 +21,9 @@ export function Slider() {
         console.log(isPhone)
         if (!isPhone) {
             setNext(<img onClick={()=>{
-                console.log('test')
                 //@ts-ignore
                 const swiper = document.querySelector('.swiper').swiper;
-                swiper.slideNext();
+                swiper.slidePrev();
             }} src={prev} className="swiper-button-next-svg" />)
             setPrev(<img onClick={()=>{
                 console.log('test')
