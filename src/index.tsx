@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
     <React.StrictMode>
           <App />
-        <div className="bg"></div>
+        {/* <div className="bg"></div> */}
     </React.StrictMode>
 )
 
