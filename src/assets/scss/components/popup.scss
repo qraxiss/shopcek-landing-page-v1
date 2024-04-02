@@ -1,6 +1,9 @@
 .success-popup-content {
     border-radius: 15px;
 
+    display: flex;
+    flex-direction: column;
+
     .title {
         color: green;
     }
@@ -9,12 +12,13 @@
         text-align: center;
     }
 
-    img.success  {
+    img.success {
     }
 
     img.close {
     }
 
     .top {
+        display: flex;
     }
 }
