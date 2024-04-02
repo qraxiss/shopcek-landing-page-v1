@@ -25,6 +25,8 @@ export function Partnership() {
 
         return (
             <React.Fragment>
+                <Formik initialValues={{}} onSubmit={console.log}></Formik>
+
                 <section className="partnership-page">
                     <div className="partnership" id="partnership">
                         <div className="info">
@@ -46,15 +48,15 @@ export function Partnership() {
                         <div className="apply">
                             <div className="title">Apply The Program</div>
 
-                            <div className="form">
+                            <Form className="form">
                                 <div className="row">
-                                    <input type="text" placeholder="PARTNER NAME" />
-                                    <input type="text" placeholder="EMAIL" />
+                                    <Field type="text" placeholder="PARTNER NAME" />
+                                    <Field type="text" placeholder="EMAIL" />
                                 </div>
 
                                 <div className="row">
-                                    <input type="text" placeholder="CONTACT NAME" />
-                                    <input type="text" placeholder="TELEGRAM HANDLE" />
+                                    <Field type="text" placeholder="CONTACT NAME" />
+                                    <Field type="text" placeholder="TELEGRAM HANDLE" />
                                 </div>
 
                                 <button
@@ -73,7 +75,7 @@ export function Partnership() {
                                 >
                                     <div className="text">SUBMIT</div>
                                 </button>
-                            </div>
+                            </Form>
 
                             <div className="info-text">
                                 *Once we've reviewed your application, our team will be in touch to discuss the next steps. Thank you for reaching out
