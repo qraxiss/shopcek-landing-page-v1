@@ -12,8 +12,8 @@ body {
 .bg {
     background: url('../images/background.svg') no-repeat center 0;
     background-size: 100%;
-    background-color: rgba(255, 255, 255, 0.4);
-    // background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    background-blend-mode: lighten;
     position: fixed;
     z-index: -1;
     width: 100vw;

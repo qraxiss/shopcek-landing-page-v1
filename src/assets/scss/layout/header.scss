@@ -20,8 +20,9 @@ header.header {
     }
 
     background: url('../../images/header-background.svg')  no-repeat center 0;
-
-
+    background-color: linear-gradient(94deg, #FFFFFF30 0%, #FFFFFF8C 24%, #FFFFFF17 68%, #FFFFFF82 100%);
+    background-blend-mode: lighten;
+    
     background-size: 100%;
     background-blend-mode: lighten;
     border-bottom: .6px white solid;
