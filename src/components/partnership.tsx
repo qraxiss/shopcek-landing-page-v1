@@ -9,6 +9,9 @@ import React, { useState, useRef, useEffect } from 'react'
 
 import { useFormik } from 'formik'
 
+import close from '../assets/images/close.png'
+import checked from '../assets/images/checked.png'
+
 export function Partnership() {
     function Component() {
         const { sendInformationGQL } = useApply()
@@ -126,6 +129,10 @@ export function Partnership() {
                     </div>
                     <img src={handshake} className="handshake" />
                     <Popup className="success-popup" open={true}>
+                        <div className="top">
+                            <img src={close} alt="" className="close" />
+                        </div>
+
                         <div className="title">Success</div>
                         <p>Your information successfully sended.</p>
                     </Popup>
