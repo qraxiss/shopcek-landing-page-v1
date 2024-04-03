@@ -54,9 +54,17 @@ html {
     width: 100%;
 }
 
+.id {
+    top: -10em !important;
+}
+
 @media only screen and (max-width: 768px) {
     .container {
         width: 95%;
+    }
+
+    .id {
+        top: -7em !important;
     }
 
     body,
@@ -74,8 +82,4 @@ html {
         -o-background-size: cover;
         background-size: cover;
     }
-}
-
-.id {
-    top: -10em !important;
 }
