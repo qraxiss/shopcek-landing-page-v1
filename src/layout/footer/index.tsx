@@ -11,6 +11,8 @@ import { useNavigate } from 'react-router'
 
 import gray from '../../assets/images/about/gray.svg'
 
+import { HashLink } from 'react-router-hash-link'
+
 function Logo() {
     const navigate = useNavigate()
 
@@ -46,15 +48,15 @@ function Nav() {
             <div className="row">
                 <div className="left">
                     <div className="pages">
-                        <a href="/#services" className="page">
+                        <HashLink smooth to="/#services" className="page">
                             SERVICES
-                        </a>
-                        <a href="/#partnership" className="page">
+                        </HashLink>
+                        <HashLink smooth to="/#partnership" className="page">
                             PARTNERSHIP
-                        </a>
-                        <a href="/#faq" className="page">
+                        </HashLink>
+                        <HashLink smooth to="/#faq" className="page">
                             FAQ
-                        </a>
+                        </HashLink>
                         <a target="_blank" href="https://shopcek.gitbook.io/shopcek-or-shpc-1/" className="page">
                             DOCS
                             <img src={gray} className="out" />
