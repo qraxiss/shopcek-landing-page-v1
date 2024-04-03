@@ -11,12 +11,20 @@ import { MenuProvider, useMenu } from '../../context/menu'
 
 export function Header() {
     function Component() {
-        const { open } = useMenu()
+        const { open, setOpen } = useMenu()
         const navigate = useNavigate()
 
         return (
             <React.Fragment>
-                <Menu isOpen={open}>
+                <Menu
+                    isOpen={open}
+                    onOpen={() => {
+                        setOpen(true)
+                    }}
+                    onClose={() => {
+                        setOpen(false)
+                    }}
+                >
                     <div className="menu">
                         <Logo />
                         <hr />
