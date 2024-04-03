@@ -42,7 +42,11 @@ export class MobileMenu extends React.Component {
                     <div className="menu">
                         <Logo />
                         <hr />
-                        <Nav close={this.closeMenu} />
+                        <Nav
+                            close={() => {
+                                this.closeMenu()
+                            }}
+                        />
                     </div>
                     {/* <a onClick={() => this.closeMenu()}>Home</a>
                     <a onClick={() => this.closeMenu()}>About</a>
