@@ -1,4 +1,5 @@
 export type Menu = {
-    open: boolean
-    setOpen: (value: boolean) => void
+    isOpen: boolean
+    handleIsOpen: () => void
+    closeSideBar: () => void
 }

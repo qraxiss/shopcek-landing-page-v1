@@ -9,11 +9,19 @@ export function useMenu() {
 }
 
 export function MenuProvider({ children }: { children: any }) {
-    const [open, setOpen] = useState(false)
+    const [isOpen, setOpen] = useState(false)
+
+    const handleIsOpen = () => {
+        setOpen(!isOpen)
+    }
+
+    const closeSideBar = () => {
+        setOpen(false)
+    }
 
     useEffect(() => {
-        console.log(open)
-    }, [open])
+        console.log(isOpen)
+    }, [isOpen])
 
-    return <MenuContext.Provider value={{ open, setOpen }}>{children}</MenuContext.Provider>
+    return <MenuContext.Provider value={{ isOpen, handleIsOpen, closeSideBar }}>{children}</MenuContext.Provider>
 }
