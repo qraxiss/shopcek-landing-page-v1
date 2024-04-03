@@ -25,8 +25,8 @@ export function MenuProvider({ children }: { children: any }) {
     }
 
     useEffect(() => {
-        console.log(isOpen)
-    }, [isOpen])
+        console.log(close)
+    }, [close])
 
     return (
         <MenuContext.Provider
