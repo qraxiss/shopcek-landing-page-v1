@@ -11,7 +11,7 @@ import { MenuProvider, useMenu } from '../../context/menu'
 
 export function Header() {
     function Component() {
-        const { stateChangeHandler, isOpen, setClose } = useMenu()
+        const { setClose } = useMenu()
         const navigate = useNavigate()
 
         return (
