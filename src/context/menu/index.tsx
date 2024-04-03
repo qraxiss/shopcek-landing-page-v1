@@ -29,7 +29,17 @@ export function MenuProvider({ children }: { children: any }) {
     }, [isOpen])
 
     return (
-        <MenuContext.Provider value={{ ref, isOpen, handleIsOpen, closeSideBar, stateChangeHandler: (newState: any) => setOpen(newState.isOpen) }}>
+        <MenuContext.Provider
+            value={{
+                ref,
+                isOpen,
+                handleIsOpen,
+                closeSideBar,
+                stateChangeHandler: (newState: any) => setOpen(newState.isOpen),
+                close: close as any,
+                setClose
+            }}
+        >
             {children}
         </MenuContext.Provider>
     )
