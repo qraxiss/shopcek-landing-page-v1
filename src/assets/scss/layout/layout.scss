@@ -22,12 +22,12 @@ section {
 }
 
 button,
-div.launch-app {
+.launch-app {
     transition-duration: 0.3s;
 }
 
 button:hover,
-div.launch-app {
+.launch-app {
     box-shadow:
         0px 0px 3px 1px rgba(0, 47, 255, 0.35),
         0px 0px 3px 1px rgba(255, 0, 255, 0.35);
