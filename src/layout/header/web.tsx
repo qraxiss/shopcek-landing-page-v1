@@ -18,10 +18,8 @@ export function Nav() {
             <div className="nav">
                 <HashLink
                     onClick={() => {
-                        console.log(open, setOpen)
-                        if (open) {
-                            setOpen(false)
-                        }
+                        console.log(open)
+                        setOpen(false)
                     }}
                     smooth
                     to="/#services"
