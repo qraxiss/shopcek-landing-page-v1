@@ -18,6 +18,7 @@ export function Nav() {
             <div className="nav">
                 <HashLink
                     onClick={() => {
+                        console.log(open, setOpen)
                         if (open) {
                             setOpen(false)
                         }
