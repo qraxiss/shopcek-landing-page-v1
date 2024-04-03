@@ -1,5 +1,14 @@
 .success-popup-content {
     padding: 1em !important;
+    background: transparent
+        linear-gradient(
+            131deg,
+            rgba(255, 255, 255, 0.4196078431) 0%,
+            rgba(255, 255, 255, 0.5490196078) 24%,
+            rgba(255, 255, 255, 0.0901960784) 68%,
+            rgba(255, 255, 255, 0.6588235294) 100%
+        )
+        0% 0% no-repeat padding-box;
 
     border-radius: 15px;
 
