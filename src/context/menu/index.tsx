@@ -34,7 +34,7 @@ export function MenuProvider({ children }: { children: any }) {
                 closeSideBar,
                 stateChangeHandler: (newState: any) => setOpen(newState.isOpen),
                 close: close as any,
-                setClose
+                setClose: (close: any) => (close ? undefined : setClose(close))
             }}
         >
             {children}
