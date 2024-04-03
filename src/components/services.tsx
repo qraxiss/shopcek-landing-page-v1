@@ -10,9 +10,7 @@ export function Services() {
         <React.Fragment>
             <section className="services-page">
                 <img src={icons} className="icons" />
-                <div className="title" id="services">
-                    SERVICES
-                </div>
+                <div className="title">SERVICES</div>
 
                 <div className="sub-title">REVOLUTIONIZING DIGITAL COMMERCE</div>
 
@@ -50,6 +48,8 @@ export function Services() {
                         <img src={shop} />
                     </div>
                 </div>
+
+                <div className="id" id="services"></div>
             </section>
         </React.Fragment>
     )
