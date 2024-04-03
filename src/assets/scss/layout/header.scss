@@ -63,6 +63,12 @@ header.header,
         text-decoration: none;
     }
 
+    a:-moz-any-link {
+        color: #000000;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
     div.launch-app {
         border-radius: 11px;
         background-color: rgba(255, 255, 255, 0.7);
