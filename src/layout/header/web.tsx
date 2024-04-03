@@ -10,8 +10,6 @@ import { MenuProvider, useMenu } from '../../context/menu'
 
 export function Nav({ close }: { close?: () => void }) {
     function Component() {
-        const { handleIsOpen } = useMenu()
-
         const navigate = useNavigate()
 
         return (
