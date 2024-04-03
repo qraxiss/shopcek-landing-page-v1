@@ -115,15 +115,15 @@ function MobileNav() {
             <div className="nav">
                 <div className="pages">
                     <div className="title">SHOPCEK</div>
-                    <a href="/#services" className="page">
+                    <HashLink smooth to="/#services" className="page">
                         SERVICES
-                    </a>
-                    <a href="/#partnership" className="page">
+                    </HashLink>
+                    <HashLink smooth to="/#partnership" className="page">
                         PARTNERSHIP
-                    </a>
-                    <a href="/#faq" className="page">
+                    </HashLink>
+                    <HashLink smooth to="/#faq" className="page">
                         FAQ
-                    </a>
+                    </HashLink>
                     <a target="_blank" href="https://shopcek.gitbook.io/shopcek-or-shpc-1/" className="page">
                         DOCS
                         <img src={gray} className="out" />
