@@ -10,7 +10,6 @@
         "@types/react-dom": "^18.2.23",
         "formik": "^2.4.5",
         "react": "^18.2.0",
-        "react-burger-menu": "https://github.com/qraxiss/react-burger-menu",
         "react-dom": "^18.2.0",
         "react-responsive": "^10.0.0",
         "react-router": "^6.22.3",
