@@ -10,6 +10,7 @@ export function useMenu() {
 
 export function MenuProvider({ children }: { children: any }) {
     const [isOpen, setOpen] = useState(false)
+    const [close, setClose] = useState(() => {})
     const ref = useRef()
 
     const handleIsOpen = () => {
