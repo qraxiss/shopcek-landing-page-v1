@@ -17,10 +17,10 @@ export function Nav({ close }: { close?: () => void }) {
                 <HashLink onClick={close} smooth to="/#services" className="title">
                     SERVICES
                 </HashLink>
-                <HashLink smooth to="/#partnership" className="title">
+                <HashLink onClick={close} smooth to="/#partnership" className="title">
                     PARTNERSHIP
                 </HashLink>
-                <HashLink smooth to="/#faq" className="title">
+                <HashLink onClick={close} smooth to="/#faq" className="title">
                     FAQ
                 </HashLink>
                 <a target="_blank" href="https://shopcek.gitbook.io/" className="title">
