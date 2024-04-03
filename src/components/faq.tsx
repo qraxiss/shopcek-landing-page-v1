@@ -48,8 +48,8 @@ const data = [
                         converted into SHPC tokens, proportional to the amount earned.
                     </li>
                     <li>
-                        Shopcek Domain NFTs: Users can own Shopcek Domain NFTs, granting them lifetime priority in platform rewards and airdrops.
-                        These domains also have a multiplier effect on XP rewards, enhancing user engagement.
+                        Shopcek Account NFTs: Users can own Shopcek Account NFTs, granting them lifetime priority in platform rewards and airdrops.
+                        These NFT’s also have a multiplier effect on XP rewards, enhancing user engagement.
                     </li>
 
                     <li>
@@ -97,7 +97,7 @@ const data = [
 
                 <p>
                     It integrates a mix of off-chain activities like referrals and social media engagement with on-chain activities, including daily
-                    logins and active engagement on the website. A distinctive feature of Shopcek is the chance for users to own Shopcek Domain NFTs,
+                    logins and active engagement on the website. A distinctive feature of Shopcek is the chance for users to own Shopcek Account NFTs,
                     which grants lifetime priority in rewards and airdrops. This initiative also encourages deeper community integration and motivates
                     users with XP multipliers.
                 </p>
