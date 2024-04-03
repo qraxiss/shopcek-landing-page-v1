@@ -14,6 +14,8 @@ export function Nav() {
 
         const navigate = useNavigate()
 
+        console.log(close)
+
         return (
             <div className="nav">
                 <HashLink onClick={close} smooth to="/#services" className="title">
