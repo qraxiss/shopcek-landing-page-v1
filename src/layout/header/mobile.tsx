@@ -9,6 +9,8 @@ import { useNavigate } from 'react-router'
 
 import { MenuProvider, useMenu } from '../../context/menu'
 
+import { ParentComponent } from './menu'
+
 export function Header() {
     function Component() {
         const { isOpen, stateChangeHandler } = useMenu()
@@ -16,22 +18,22 @@ export function Header() {
 
         return (
             <React.Fragment>
-                <Menu
-                    isOpen={isOpen}
-                    onStateChange={(state: any) => {
-                        stateChangeHandler(state)
-                    }}
-                    // setClose={(value: any) => {
-                    //     console.log(value)
-                    //     setClose(value)
-                    // }}
+                <ParentComponent
+                // isOpen={isOpen}
+                // onStateChange={(state: any) => {
+                //     stateChangeHandler(state)
+                // }}
+                // setClose={(value: any) => {
+                //     console.log(value)
+                //     setClose(value)
+                // }}
                 >
-                    <div className="menu">
+                    {/* <div className="menu">
                         <Logo />
                         <hr />
                         <Nav />
-                    </div>
-                </Menu>
+                    </div> */}
+                </ParentComponent>
                 <header className="header">
                     <img
                         onClick={() => {
