@@ -11,7 +11,7 @@ import { MenuProvider, useMenu } from '../../context/menu'
 
 export function Header() {
     function Component() {
-        const { setOpen } = useMenu()
+        const { setOpen, open } = useMenu()
         const navigate = useNavigate()
 
         console.log('re render')
@@ -19,7 +19,7 @@ export function Header() {
         return (
             <React.Fragment>
                 <Menu
-                    // open={open}
+                    isOpen={open}
                     onOpen={() => {
                         // setOpen(true)
                     }}
