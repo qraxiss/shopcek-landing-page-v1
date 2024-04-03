@@ -14,15 +14,17 @@ export function Header() {
         const { setOpen } = useMenu()
         const navigate = useNavigate()
 
+        console.log('re render')
+
         return (
             <React.Fragment>
                 <Menu
                     // open={open}
                     onOpen={() => {
-                        setOpen(true)
+                        // setOpen(true)
                     }}
                     onClose={() => {
-                        setOpen(false)
+                        // setOpen(false)
                     }}
                 >
                     <div className="menu">
