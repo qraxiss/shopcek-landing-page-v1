@@ -6,6 +6,10 @@ section.services-page {
     gap: 1.5rem;
     margin-top: -25rem;
 
+    .id {
+        top: -6em;
+    }
+
     img.icons {
         position: relative;
         width: 125%;
@@ -95,6 +99,10 @@ section.services-page {
     }
 
     .services-page {
+        .id {
+            top: -10em !important;
+        }
+
         .sub-title {
             text-align: center;
         }
