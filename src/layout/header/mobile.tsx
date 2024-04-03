@@ -17,7 +17,7 @@ export function Header() {
         return (
             <React.Fragment>
                 <Menu
-                    open={open}
+                    // open={open}
                     onOpen={() => {
                         console.log(open)
                         setOpen(true)
