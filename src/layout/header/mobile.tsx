@@ -19,6 +19,7 @@ export function Header() {
                 <Menu
                     isOpen={open}
                     onOpen={() => {
+                        console.log(open)
                         setOpen(true)
                     }}
                     onClose={() => {
