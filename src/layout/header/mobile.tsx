@@ -17,14 +17,14 @@ export function Header() {
         return (
             <React.Fragment>
                 <Menu
-                    // isOpen={isOpen}
-                    // onStateChange={(state: any) => {
-                    //     stateChangeHandler(state)
-                    // }}
-                    setClose={(value: any) => {
-                        console.log(value)
-                        setClose(value)
-                    }}
+                // isOpen={isOpen}
+                // onStateChange={(state: any) => {
+                //     stateChangeHandler(state)
+                // }}
+                // setClose={(value: any) => {
+                //     console.log(value)
+                //     setClose(value)
+                // }}
                 >
                     <div className="menu">
                         <Logo />
