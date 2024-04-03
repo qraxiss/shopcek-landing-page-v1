@@ -50,6 +50,8 @@ export function Partnership() {
         return (
             <React.Fragment>
                 <section className="partnership-page">
+                    <div className="id" id="partnership"></div>
+
                     <div className="partnership">
                         <div className="info">
                             <div className="title">PARTNERSHIP</div>
@@ -153,7 +155,6 @@ export function Partnership() {
 
                         <img src={checked} alt="" className="checked" />
                     </Popup>
-                    <div className="id" id="partnership"></div>
                 </section>
             </React.Fragment>
         )

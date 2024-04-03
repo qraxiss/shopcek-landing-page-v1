@@ -155,6 +155,8 @@ export function Faq() {
     return (
         <React.Fragment>
             <section className="faq-page">
+                <div className="id" id="faq"></div>
+
                 <div className="faq">
                     <div className="info">
                         <div className="title">FAQ</div>
@@ -192,8 +194,6 @@ export function Faq() {
 
                     <img className="question" src={question} alt="" />
                 </div>
-
-                <div className="id" id="faq"></div>
             </section>
         </React.Fragment>
     )
