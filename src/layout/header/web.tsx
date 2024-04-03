@@ -16,7 +16,16 @@ export function Nav() {
 
         return (
             <div className="nav">
-                <HashLink smooth to="/#services" className="title">
+                <HashLink
+                    onClick={() => {
+                        if (open) {
+                            setOpen(false)
+                        }
+                    }}
+                    smooth
+                    to="/#services"
+                    className="title"
+                >
                     SERVICES
                 </HashLink>
                 <HashLink smooth to="/#partnership" className="title">
