@@ -135,7 +135,7 @@ export function Partnership() {
                             </div>
                         </div>
                     </div>
-                    <img src={handshake} className="handshake" id="faq" />
+                    <img src={handshake} className="handshake" />
                     <Popup className="success-popup" open={open}>
                         <div className="top">
                             <img
