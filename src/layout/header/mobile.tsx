@@ -17,13 +17,13 @@ export function Header() {
         return (
             <React.Fragment>
                 <Menu
-                // open={open}
-                // onOpen={() => {
-                //     setOpen(true)
-                // }}
-                // onClose={() => {
-                //     setOpen(false)
-                // }}
+                    // open={open}
+                    onOpen={() => {
+                        setOpen(true)
+                    }}
+                    onClose={() => {
+                        setOpen(false)
+                    }}
                 >
                     <div className="menu">
                         <Logo />
