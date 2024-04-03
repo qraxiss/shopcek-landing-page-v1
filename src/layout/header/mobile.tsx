@@ -21,7 +21,10 @@ export function Header() {
                     // onStateChange={(state: any) => {
                     //     stateChangeHandler(state)
                     // }}
-                    setClose={setClose}
+                    setClose={(value: any) => {
+                        console.log(value)
+                        setClose(value)
+                    }}
                 >
                     <div className="menu">
                         <Logo />
