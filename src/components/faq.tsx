@@ -192,6 +192,8 @@ export function Faq() {
 
                     <img className="question" src={question} alt="" />
                 </div>
+
+                <div className="hash">asdsa</div>
             </section>
         </React.Fragment>
     )
