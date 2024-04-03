@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from 'react'
+import { createContext, useContext, useEffect, useState, useRef } from 'react'
 import { Menu } from './types'
 
 //@ts-ignore
@@ -10,6 +10,7 @@ export function useMenu() {
 
 export function MenuProvider({ children }: { children: any }) {
     const [isOpen, setOpen] = useState(false)
+    const ref = useRef()
 
     const handleIsOpen = () => {
         setOpen(!isOpen)
@@ -27,7 +28,7 @@ export function MenuProvider({ children }: { children: any }) {
     }, [isOpen])
 
     return (
-        <MenuContext.Provider value={{ isOpen, handleIsOpen, closeSideBar, stateChangeHandler: (newState: any) => setOpen(newState.isOpen) }}>
+        <MenuContext.Provider value={{ ref, isOpen, handleIsOpen, closeSideBar, stateChangeHandler: (newState: any) => setOpen(newState.isOpen) }}>
             {children}
         </MenuContext.Provider>
     )

@@ -3,4 +3,5 @@ export type Menu = {
     handleIsOpen: () => void
     closeSideBar: () => void
     stateChangeHandler: (newState: any) => void
+    ref?: any
 }
