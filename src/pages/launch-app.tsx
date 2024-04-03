@@ -115,7 +115,7 @@ export function LaunchApp() {
                             </div>
                         </div>
 
-                        <img src={world} className="world" />
+                        {/* <img src={world} className="world" /> */}
                     </div>
 
                     <Popup className="success-popup" open={open}>
