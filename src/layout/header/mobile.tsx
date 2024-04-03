@@ -11,14 +11,14 @@ import { MenuProvider, useMenu } from '../../context/menu'
 
 export function Header() {
     function Component() {
-        const { handleIsOpen, isOpen } = useMenu()
+        const { stateChangeHandler, isOpen } = useMenu()
         const navigate = useNavigate()
 
         console.log('re render')
 
         return (
             <React.Fragment>
-                <Menu isOpen={isOpen} onOpen={handleIsOpen} onClose={handleIsOpen}>
+                <Menu isOpen={isOpen} onStateChange={stateChangeHandler}>
                     <div className="menu">
                         <Logo />
                         <hr />
