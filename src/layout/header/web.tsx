@@ -6,34 +6,45 @@ import black from '../../assets/images/about/black.svg'
 import { useNavigate } from 'react-router'
 
 import { HashLink } from 'react-router-hash-link'
+import { MenuProvider, useMenu } from '../../context/menu'
 
 export function Nav() {
-    const navigate = useNavigate()
+    function Component() {
+        const { open, setOpen } = useMenu()
+
+        const navigate = useNavigate()
+
+        return (
+            <div className="nav">
+                <HashLink smooth to="/#services" className="title">
+                    SERVICES
+                </HashLink>
+                <HashLink smooth to="/#partnership" className="title">
+                    PARTNERSHIP
+                </HashLink>
+                <HashLink smooth to="/#faq" className="title">
+                    FAQ
+                </HashLink>
+                <a target="_blank" href="https://shopcek.gitbook.io/" className="title">
+                    DOCS
+                    <img src={black} className="out" />
+                </a>
+                <div
+                    onClick={() => {
+                        navigate('/launch-app')
+                    }}
+                    className="launch-app"
+                >
+                    <div className="title">LAUNCH APP</div>
+                </div>
+            </div>
+        )
+    }
 
     return (
-        <div className="nav">
-            <HashLink smooth to="/#services" className="title">
-                SERVICES
-            </HashLink>
-            <HashLink smooth to="/#partnership" className="title">
-                PARTNERSHIP
-            </HashLink>
-            <HashLink smooth to="/#faq" className="title">
-                FAQ
-            </HashLink>
-            <a target="_blank" href="https://shopcek.gitbook.io/" className="title">
-                DOCS
-                <img src={black} className="out" />
-            </a>
-            <div
-                onClick={() => {
-                    navigate('/launch-app')
-                }}
-                className="launch-app"
-            >
-                <div className="title">LAUNCH APP</div>
-            </div>
-        </div>
+        <MenuProvider>
+            <Component></Component>
+        </MenuProvider>
     )
 }
 
