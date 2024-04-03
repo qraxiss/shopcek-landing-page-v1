@@ -11,20 +11,20 @@ import { MenuProvider, useMenu } from '../../context/menu'
 
 export function Header() {
     function Component() {
-        const { setClose } = useMenu()
+        const { isOpen, stateChangeHandler } = useMenu()
         const navigate = useNavigate()
 
         return (
             <React.Fragment>
                 <Menu
-                    // isOpen={isOpen}
-                    // onStateChange={(state: any) => {
-                    //     stateChangeHandler(state)
-                    // }}
-                    setClose={(value: any) => {
-                        console.log(value)
-                        setClose(value)
+                    isOpen={isOpen}
+                    onStateChange={(state: any) => {
+                        stateChangeHandler(state)
                     }}
+                    // setClose={(value: any) => {
+                    //     console.log(value)
+                    //     setClose(value)
+                    // }}
                 >
                     <div className="menu">
                         <Logo />

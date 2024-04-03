@@ -10,15 +10,13 @@ import { MenuProvider, useMenu } from '../../context/menu'
 
 export function Nav() {
     function Component() {
-        const { close } = useMenu()
+        const { handleIsOpen } = useMenu()
 
         const navigate = useNavigate()
 
-        console.log(close)
-
         return (
             <div className="nav">
-                <HashLink onClick={close} smooth to="/#services" className="title">
+                <HashLink onClick={handleIsOpen} smooth to="/#services" className="title">
                     SERVICES
                 </HashLink>
                 <HashLink smooth to="/#partnership" className="title">
