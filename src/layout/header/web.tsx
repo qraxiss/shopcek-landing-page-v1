@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router'
 import { HashLink } from 'react-router-hash-link'
 import { MenuProvider, useMenu } from '../../context/menu'
 
-export function Nav() {
+export function Nav({ close }: { close?: () => void }) {
     function Component() {
         const { handleIsOpen } = useMenu()
 
@@ -16,7 +16,7 @@ export function Nav() {
 
         return (
             <div className="nav">
-                <HashLink onClick={handleIsOpen} smooth to="/#services" className="title">
+                <HashLink onClick={close} smooth to="/#services" className="title">
                     SERVICES
                 </HashLink>
                 <HashLink smooth to="/#partnership" className="title">
