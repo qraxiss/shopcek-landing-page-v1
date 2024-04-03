@@ -193,7 +193,7 @@ export function Faq() {
                     <img className="question" src={question} alt="" />
                 </div>
 
-                <div className="hash" id="faq"></div>
+                <div className="id" id="faq"></div>
             </section>
         </React.Fragment>
     )
