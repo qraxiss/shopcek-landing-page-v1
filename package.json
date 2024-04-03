@@ -49,6 +49,7 @@
         ]
     },
     "devDependencies": {
+        "@types/react-burger-menu": "^2.8.7",
         "@types/react-router-hash-link": "^2.4.9",
         "sass": "^1.72.0"
     }
