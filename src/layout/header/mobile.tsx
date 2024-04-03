@@ -18,22 +18,7 @@ export function Header() {
 
         return (
             <React.Fragment>
-                <MobileMenu
-                // isOpen={isOpen}
-                // onStateChange={(state: any) => {
-                //     stateChangeHandler(state)
-                // }}
-                // setClose={(value: any) => {
-                //     console.log(value)
-                //     setClose(value)
-                // }}
-                >
-                    {/* <div className="menu">
-                        <Logo />
-                        <hr />
-                        <Nav />
-                    </div> */}
-                </MobileMenu>
+                <MobileMenu />
                 <header className="header">
                     <img
                         onClick={() => {
