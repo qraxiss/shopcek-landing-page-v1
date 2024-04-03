@@ -15,12 +15,12 @@ export function Nav() {
             <HashLink smooth to="/#services" className="title">
                 SERVICES
             </HashLink>
-            <a href="/#partnership" className="title">
+            <HashLink smooth to="/#partnership" className="title">
                 PARTNERSHIP
-            </a>
-            <a href="/#faq" className="title">
+            </HashLink>
+            <HashLink smooth to="/#faq" className="title">
                 FAQ
-            </a>
+            </HashLink>
             <a target="_blank" href="https://shopcek.gitbook.io/" className="title">
                 DOCS
                 <img src={black} className="out" />
