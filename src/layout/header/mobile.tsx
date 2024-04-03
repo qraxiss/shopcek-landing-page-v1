@@ -16,7 +16,7 @@ export function Header() {
 
         return (
             <React.Fragment>
-                <Menu open={open}>
+                <Menu isOpen={open}>
                     <div className="menu">
                         <Logo />
                         <hr />
