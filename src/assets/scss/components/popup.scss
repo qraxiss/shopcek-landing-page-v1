@@ -1,5 +1,5 @@
 .success-popup-content {
-    padding: 3em;
+    padding: 1em !important;
 
     border-radius: 15px;
 
@@ -38,6 +38,6 @@
 
 @media screen and (max-width: 768px) {
     .success-popup-content {
-        width: 90% !important;
+        width: 75% !important;
     }
 }
