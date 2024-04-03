@@ -19,7 +19,7 @@ export function Nav() {
                 <HashLink
                     onClick={() => {
                         console.log(open)
-                        setOpen(false)
+                        setOpen(!open)
                     }}
                     smooth
                     to="/#services"
