@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router'
 
 import { MenuProvider, useMenu } from '../../context/menu'
 
-import { ParentComponent } from './menu'
+import { MobileMenu } from './menu'
 
 export function Header() {
     function Component() {
@@ -18,7 +18,7 @@ export function Header() {
 
         return (
             <React.Fragment>
-                <ParentComponent
+                <MobileMenu
                 // isOpen={isOpen}
                 // onStateChange={(state: any) => {
                 //     stateChangeHandler(state)
@@ -33,7 +33,7 @@ export function Header() {
                         <hr />
                         <Nav />
                     </div> */}
-                </ParentComponent>
+                </MobileMenu>
                 <header className="header">
                     <img
                         onClick={() => {

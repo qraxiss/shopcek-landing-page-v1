@@ -2,7 +2,9 @@ import React from 'react'
 
 import { slide as Menu } from 'react-burger-menu'
 
-export class ParentComponent extends React.Component {
+import { Logo, Nav } from './web'
+
+export class MobileMenu extends React.Component {
     constructor(props: any) {
         super(props)
         this.state = {
@@ -37,10 +39,15 @@ export class ParentComponent extends React.Component {
                     isOpen={this.state.menuOpen}
                     onStateChange={(state) => this.handleStateChange(state)}
                 >
-                    <a onClick={() => this.closeMenu()}>Home</a>
+                    <div className="menu">
+                        <Logo />
+                        <hr />
+                        <Nav close={this.closeMenu} />
+                    </div>
+                    {/* <a onClick={() => this.closeMenu()}>Home</a>
                     <a onClick={() => this.closeMenu()}>About</a>
                     <a onClick={() => this.closeMenu()}>Contact</a>
-                    <a onClick={() => this.closeMenu()}>Settings</a>
+                    <a onClick={() => this.closeMenu()}>Settings</a> */}
                 </Menu>
                 {/* <CustomIcon onClick={() => this.toggleMenu()} /> */}
             </div>
