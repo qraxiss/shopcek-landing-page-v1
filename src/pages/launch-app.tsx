@@ -16,7 +16,7 @@ export function LaunchApp() {
 
         const formik = useFormik({
             initialValues: {} as any,
-            onSubmit: console.log
+            onSubmit: () => {}
         })
 
         const handleChange = (value: any) => {
@@ -30,14 +30,12 @@ export function LaunchApp() {
                 switch (sendInformationGQL.status) {
                     case 'success': {
                         if (sendInformationGQL.data === true) {
-                            formik
-                                .setValues({
-                                    name: '',
-                                    telegramHandle: '',
-                                    email: '',
-                                    partnerName: ''
-                                })
-                                .then(console.log)
+                            formik.setValues({
+                                name: '',
+                                telegramHandle: '',
+                                email: '',
+                                partnerName: ''
+                            })
                             setOpen(true)
                         }
                     }
@@ -97,7 +95,6 @@ export function LaunchApp() {
                                 <button
                                     id="partnershipSubmit"
                                     onClick={() => {
-                                        console.log(formik.values)
                                         sendInformationGQL.fn({
                                             variables: {
                                                 ...formik.values

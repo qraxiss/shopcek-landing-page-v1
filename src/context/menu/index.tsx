@@ -18,10 +18,7 @@ export function MenuProvider({ children }: { children: any }) {
     }
 
     const closeSideBar = () => {
-        console.log('close')
         setOpen(false)
-
-        console.log(isOpen)
     }
 
     useEffect(() => {

@@ -32,14 +32,12 @@ export function Partnership() {
                 switch (sendInformationGQL.status) {
                     case 'success': {
                         if (sendInformationGQL.data === true) {
-                            formik
-                                .setValues({
-                                    name: '',
-                                    telegramHandle: '',
-                                    email: '',
-                                    partnerName: ''
-                                })
-                                .then(console.log)
+                            formik.setValues({
+                                name: '',
+                                telegramHandle: '',
+                                email: '',
+                                partnerName: ''
+                            })
                             setOpen(true)
                         }
                     }
@@ -118,7 +116,6 @@ export function Partnership() {
                                 <button
                                     id="partnershipSubmit"
                                     onClick={() => {
-                                        console.log(formik.values)
                                         sendInformationGQL.fn({
                                             variables: {
                                                 ...formik.values

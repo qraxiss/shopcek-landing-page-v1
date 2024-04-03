@@ -14,14 +14,11 @@ export function Header() {
         const { stateChangeHandler, isOpen, setClose } = useMenu()
         const navigate = useNavigate()
 
-        console.log('re render')
-
         return (
             <React.Fragment>
                 <Menu
                     // isOpen={isOpen}
                     // onStateChange={(state: any) => {
-                    //     console.log(state)
                     //     stateChangeHandler(state)
                     // }}
                     setClose={setClose}
