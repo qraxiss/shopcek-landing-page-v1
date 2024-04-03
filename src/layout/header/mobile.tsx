@@ -18,7 +18,7 @@ export function Header() {
 
         return (
             <React.Fragment>
-                <Menu isOpen={isOpen} onStateChange={stateChangeHandler}>
+                <Menu isOpen={isOpen} onStateChange={(state: any) => stateChangeHandler(state)}>
                     <div className="menu">
                         <Logo />
                         <hr />
