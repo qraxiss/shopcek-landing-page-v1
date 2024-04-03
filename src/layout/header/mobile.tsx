@@ -7,27 +7,37 @@ import text from '../../assets/images/text.svg'
 import { Nav, Logo } from './web'
 import { useNavigate } from 'react-router'
 
+import { MenuProvider, useMenu } from '../../context/menu'
+
 export function Header() {
-    const navigate = useNavigate()
+    function Component() {
+        const navigate = useNavigate()
+
+        return (
+            <React.Fragment>
+                <Menu>
+                    <div className="menu">
+                        <Logo />
+                        <hr />
+                        <Nav />
+                    </div>
+                </Menu>
+                <header className="header">
+                    <img
+                        onClick={() => {
+                            navigate('/')
+                        }}
+                        className="icon"
+                        src={icon}
+                    />
+                </header>
+            </React.Fragment>
+        )
+    }
 
     return (
-        <React.Fragment>
-            <Menu>
-                <div className="menu">
-                    <Logo />
-                    <hr />
-                    <Nav />
-                </div>
-            </Menu>
-            <header className="header">
-                <img
-                    onClick={() => {
-                        navigate('/')
-                    }}
-                    className="icon"
-                    src={icon}
-                />
-            </header>
-        </React.Fragment>
+        <MenuProvider>
+            <Component></Component>
+        </MenuProvider>
     )
 }
