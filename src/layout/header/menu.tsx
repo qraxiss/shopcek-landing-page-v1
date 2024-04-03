@@ -32,6 +32,7 @@ export class MobileMenu extends React.Component {
     }
 
     render() {
+        console.log(this.state)
         return (
             <div>
                 <Menu
