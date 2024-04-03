@@ -11,5 +11,9 @@ export function useMenu() {
 export function MenuProvider({ children }: { children: any }) {
     const [open, setOpen] = useState(false)
 
+    useEffect(() => {
+        console.log(open)
+    }, [open])
+
     return <MenuContext.Provider value={{ open, setOpen }}>{children}</MenuContext.Provider>
 }
