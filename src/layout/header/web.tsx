@@ -5,14 +5,16 @@ import black from '../../assets/images/about/black.svg'
 
 import { useNavigate } from 'react-router'
 
+import { HashLink } from 'react-router-hash-link'
+
 export function Nav() {
     const navigate = useNavigate()
 
     return (
         <div className="nav">
-            <a href="/#services" className="title">
+            <HashLink smooth to="/#services" className="title">
                 SERVICES
-            </a>
+            </HashLink>
             <a href="/#partnership" className="title">
                 PARTNERSHIP
             </a>
