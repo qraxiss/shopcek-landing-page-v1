@@ -176,6 +176,7 @@ export function Faq() {
                             {data.map((item: any, idx: number) => {
                                 return (
                                     <RSC
+                                        id="RSC-Example"
                                         style={{
                                             width: '50%',
                                             height: '50%'
