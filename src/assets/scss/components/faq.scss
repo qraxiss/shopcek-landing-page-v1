@@ -46,6 +46,7 @@
                     transition:
                         width 2s,
                         height 8s;
+
                     text-align: left;
                     width: 93%;
                     background: #ffffff91 0% 0% no-repeat padding-box;
@@ -84,7 +85,7 @@
                 }
 
                 .box.active {
-                    height: unset;
+                    height: 15rem;
                     padding-top: 1rem;
                 }
             }
