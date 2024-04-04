@@ -50,6 +50,10 @@
                     -webkit-transition: all 0.5s;
                     -moz-transition: all 0.5s;
                     transition: all 0.5s;
+
+                    box-sizing: border-box;
+                    max-width: 17rem;
+
                     height: 3em;
                     text-align: left;
                     width: 93%;
@@ -87,14 +91,13 @@
 
                         width: 98%;
                         // height: 90%;
-                        box-sizing: border-box;
                         font-size: 1em;
                     }
                 }
 
                 .box.active {
                     // transform: scaleY(30.2);
-                    height: 20rem;
+                    // height: 20rem;
                     padding: 1rem;
 
                     .text {
