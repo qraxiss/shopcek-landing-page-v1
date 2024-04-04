@@ -97,7 +97,8 @@ export function LaunchApp() {
                                     onClick={() => {
                                         sendInformationGQL.fn({
                                             variables: {
-                                                ...formik.values
+                                                ...formik.values,
+                                                type: 'app-demo'
                                             }
                                         })
                                     }}

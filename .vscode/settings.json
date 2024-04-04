@@ -1,12 +1,12 @@
-// {
-//     "emeraldwalk.runonsave": {
-//         "commands": [
-//             {
-//                 "cmd": "npm run pretty"
-//             },
-//             {
-//                 "cmd": "npm run push"
-//             }
-//         ]
-//     }
-// }
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "cmd": "npm run pretty"
+            },
+            {
+                "cmd": "npm run push"
+            }
+        ]
+    }
+}

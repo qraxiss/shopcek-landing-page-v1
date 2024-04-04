@@ -118,7 +118,8 @@ export function Partnership() {
                                     onClick={() => {
                                         sendInformationGQL.fn({
                                             variables: {
-                                                ...formik.values
+                                                ...formik.values,
+                                                type: 'partnership'
                                             }
                                         })
                                     }}
