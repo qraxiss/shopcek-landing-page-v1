@@ -52,7 +52,7 @@
                     transition: all 0.5s;
 
                     box-sizing: border-box;
-                    max-width: 17rem;
+                    // max-width: 17rem;
 
                     height: 3em;
                     text-align: left;
@@ -97,7 +97,7 @@
 
                 .box.active {
                     // transform: scaleY(30.2);
-                    // height: 20rem;
+                    height: 20rem;
                     padding: 1rem;
 
                     .text {
