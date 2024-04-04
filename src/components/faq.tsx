@@ -186,15 +186,18 @@ export function Faq() {
 
                                             <img src={state[idx] ? minus : plus} alt="" />
                                         </div>
-                                        <RSC
-                                            id="RSC-Example"
-                                            style={{
-                                                width: '100%',
-                                                height: '100%'
-                                            }}
-                                        >
-                                            <div className="text">{state[idx] ? item.text : undefined}</div>
-                                        </RSC>
+
+                                        {state[idx] ? (
+                                            <RSC
+                                                id="RSC-Example"
+                                                style={{
+                                                    width: '100%',
+                                                    height: '100%'
+                                                }}
+                                            >
+                                                {item.text}
+                                            </RSC>
+                                        ) : undefined}
                                     </div>
                                 )
                             })}
