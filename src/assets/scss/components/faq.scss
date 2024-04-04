@@ -130,6 +130,10 @@
                 .box.active {
                     height: unset;
                 }
+
+                .box:hover {
+                    height: 10rem;
+                }
             }
         }
     }
