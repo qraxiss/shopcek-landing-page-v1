@@ -85,6 +85,7 @@
                     height 4s;
 
                 .box.active {
+                    height: unset;
                     padding-top: 1rem;
                 }
             }
