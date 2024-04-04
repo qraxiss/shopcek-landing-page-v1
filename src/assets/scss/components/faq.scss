@@ -63,6 +63,9 @@
                     padding-left: 1rem;
                     padding-right: 1rem;
 
+                    display: flex;
+                    flex-direction: column;
+
                     .top {
                         height: 2.5rem;
 
@@ -97,7 +100,7 @@
 
                 .box.active {
                     // transform: scaleY(30.2);
-                    height: 50ch;
+                    height: 30ch;
                     padding: 1rem;
 
                     .text {
