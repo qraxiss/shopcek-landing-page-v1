@@ -50,7 +50,7 @@
                     -webkit-transition: all 0.5s;
                     -moz-transition: all 0.5s;
                     transition: all 0.5s;
-
+                    justify-content: center;
                     box-sizing: border-box;
                     // max-width: 17rem;
 
@@ -99,7 +99,7 @@
                 }
 
                 .box.active {
-                    // transform: scaleY(30.2);
+                    justify-content: unset;
                     height: 30ch;
                     padding: 1rem;
 
