@@ -90,6 +90,10 @@
                 .box.active {
                     height: 20rem;
                     padding-top: 1rem;
+
+                    .text {
+                        height: auto;
+                    }
                 }
             }
         }
