@@ -45,7 +45,8 @@
                 gap: 1rem;
                 width: 100%;
                 .box {
-                    transition: height 0.2s !important;
+                    transition: transform 1s ease;
+                    // transition: height 0.2s !important;
                     height: 3em;
                     text-align: left;
                     width: 93%;
