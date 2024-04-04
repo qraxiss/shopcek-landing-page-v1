@@ -121,6 +121,10 @@
                         text-align: left;
                         font-size: 0.85em;
                     }
+
+                    transition:
+                        width 2s,
+                        height 4s;
                 }
 
                 .box.active {
