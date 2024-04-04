@@ -7,8 +7,8 @@ import 'swiper/css/navigation'
 import img1 from '../assets/images/slider/1.svg'
 import img2 from '../assets/images/slider/2.svg'
 import img3 from '../assets/images/slider/3.svg'
-import next from '../assets/images/slider/right.svg'
-import prev from '../assets/images/slider/left.svg'
+import prev from '../assets/images/slider/right.svg'
+import next from '../assets/images/slider/left.svg'
 
 import { useMediaQuery } from 'react-responsive'
 import React, { useEffect, useState } from 'react'
@@ -24,9 +24,9 @@ export function Slider() {
                     onClick={() => {
                         //@ts-ignore
                         const swiper = document.querySelector('.swiper').swiper
-                        swiper.slidePrev()
+                        swiper.slideNext()
                     }}
-                    src={prev}
+                    src={next}
                     className="swiper-button-next-svg"
                 />
             )
@@ -35,9 +35,9 @@ export function Slider() {
                     onClick={() => {
                         //@ts-ignore
                         const swiper = document.querySelector('.swiper').swiper
-                        swiper.slideNext()
+                        swiper.slidePrev()
                     }}
-                    src={next}
+                    src={prev}
                     className="swiper-button-prev-svg"
                 />
             )
