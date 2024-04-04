@@ -127,8 +127,8 @@
                         height 4s;
                 }
 
-                .box.active {
-                    height: 10rem;
+                .box:hover {
+                    height: 10rem !important;
                 }
             }
         }
