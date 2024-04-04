@@ -3,6 +3,8 @@ import question from '../assets/images/faq/question.svg'
 import plus from '../assets/images/faq/plug.svg'
 import minus from '../assets/images/faq/minus.png'
 
+import RSC from 'react-scrollbars-custom'
+
 const data = [
     {
         title: 'What is Shopcek?',
@@ -173,20 +175,22 @@ export function Faq() {
                         <div className="questions">
                             {data.map((item: any, idx: number) => {
                                 return (
-                                    <div
-                                        className={`box ${state[idx] ? 'active' : ''}`}
-                                        onClick={() => {
-                                            setReverse(idx)
-                                        }}
-                                    >
-                                        <div className="top">
-                                            <div className="title">{item.title}</div>
+                                    <RSC>
+                                        <div
+                                            className={`box ${state[idx] ? 'active' : ''}`}
+                                            onClick={() => {
+                                                setReverse(idx)
+                                            }}
+                                        >
+                                            <div className="top">
+                                                <div className="title">{item.title}</div>
 
-                                            <img src={state[idx] ? minus : plus} alt="" />
+                                                <img src={state[idx] ? minus : plus} alt="" />
+                                            </div>
+
+                                            {state[idx] ? item.text : undefined}
                                         </div>
-
-                                        {state[idx] ? item.text : undefined}
-                                    </div>
+                                    </RSC>
                                 )
                             })}
                         </div>
