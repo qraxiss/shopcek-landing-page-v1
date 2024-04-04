@@ -175,7 +175,12 @@ export function Faq() {
                         <div className="questions">
                             {data.map((item: any, idx: number) => {
                                 return (
-                                    <RSC>
+                                    <RSC
+                                        style={{
+                                            width: '50%',
+                                            height: '50%'
+                                        }}
+                                    >
                                         <div
                                             className={`box ${state[idx] ? 'active' : ''}`}
                                             onClick={() => {
