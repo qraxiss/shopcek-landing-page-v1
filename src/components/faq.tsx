@@ -175,28 +175,27 @@ export function Faq() {
                         <div className="questions">
                             {data.map((item: any, idx: number) => {
                                 return (
-                                    <RSC
-                                        id="RSC-Example"
-                                        style={{
-                                            width: '50%',
-                                            height: '50%'
+                                    <div
+                                        className={`box ${state[idx] ? 'active' : ''}`}
+                                        onClick={() => {
+                                            setReverse(idx)
                                         }}
                                     >
-                                        <div
-                                            className={`box ${state[idx] ? 'active' : ''}`}
-                                            onClick={() => {
-                                                setReverse(idx)
+                                        <div className="top">
+                                            <div className="title">{item.title}</div>
+
+                                            <img src={state[idx] ? minus : plus} alt="" />
+                                        </div>
+                                        <RSC
+                                            id="RSC-Example"
+                                            style={{
+                                                width: '100%',
+                                                height: '95%'
                                             }}
                                         >
-                                            <div className="top">
-                                                <div className="title">{item.title}</div>
-
-                                                <img src={state[idx] ? minus : plus} alt="" />
-                                            </div>
-
                                             {state[idx] ? item.text : undefined}
-                                        </div>
-                                    </RSC>
+                                        </RSC>
+                                    </div>
                                 )
                             })}
                         </div>
