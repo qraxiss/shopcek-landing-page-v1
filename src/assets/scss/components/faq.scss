@@ -43,6 +43,9 @@
                 gap: 1rem;
                 width: 100%;
                 .box {
+                    transition:
+                        width 2s,
+                        height 8s;
                     text-align: left;
                     width: 93%;
                     background: #ffffff91 0% 0% no-repeat padding-box;
@@ -79,10 +82,6 @@
                         font-size: 1em;
                     }
                 }
-
-                transition:
-                    width 2s,
-                    height 4s;
 
                 .box.active {
                     height: unset;
