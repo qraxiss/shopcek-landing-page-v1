@@ -190,10 +190,10 @@ export function Faq() {
                                             id="RSC-Example"
                                             style={{
                                                 width: '100%',
-                                                height: '95%'
+                                                height: '100%'
                                             }}
                                         >
-                                            {state[idx] ? item.text : undefined}
+                                            <div className="text">{state[idx] ? item.text : undefined}</div>
                                         </RSC>
                                     </div>
                                 )
