@@ -192,7 +192,7 @@ export function Faq() {
                                                 id="RSC-Example"
                                                 style={{
                                                     width: '100%',
-                                                    height: '100%'
+                                                    height: '85%'
                                                 }}
                                             >
                                                 {item.text}
