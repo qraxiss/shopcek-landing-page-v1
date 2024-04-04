@@ -45,8 +45,11 @@
                 gap: 1rem;
                 width: 100%;
                 .box {
-                    transition: transform 1s ease;
+                    // transition: transform 1s ease;
                     // transition: height 0.2s !important;
+                    -webkit-transition: all 0.5s;
+                    -moz-transition: all 0.5s;
+                    transition: all 0.5s;
                     height: 3em;
                     text-align: left;
                     width: 93%;
@@ -90,7 +93,8 @@
                 }
 
                 .box.active {
-                    transform: scaleY(30.2);
+                    // transform: scaleY(30.2);
+                    height: 20rem;
                     padding: 1rem;
 
                     .text {
