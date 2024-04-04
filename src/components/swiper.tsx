@@ -13,6 +13,35 @@ import prev from '../assets/images/slider/left.svg'
 import { useMediaQuery } from 'react-responsive'
 import React, { useEffect, useState } from 'react'
 
+/**
+ * Generate custom pagination bullets.
+ *
+ * @param {Swiper} swiper
+ * @param {number} current
+ * @param {number} total
+ *
+ * @return {string}
+ */
+function renderCarouselPaginationBullets({ swiper, current, total }: any) {
+    const bullets = []
+
+    for (let index = 1; index <= total; index++) {
+        const bullet = document.createElement('div')
+        let className = 'w-2 h-2 bg-gray-400 rounded-full mr-1 cursor-pointer'
+
+        if (current === index) {
+            // handle active bullet
+        }
+
+        bullet.className = className
+        bullet.setAttribute('data-slide', String(index))
+
+        bullets.push(bullet)
+    }
+
+    return bullets.map((bullet) => bullet.outerHTML).join(' ')
+}
+
 export function Slider() {
     const isPhone = useMediaQuery({ query: '(max-width: 768px)' })
     const [nextimg, setNext] = useState<any>()
