@@ -11,6 +11,8 @@ import { useNavigate } from 'react-router'
 
 import gray from '../../assets/images/about/gray.svg'
 
+import purple from '../../assets/images/ms-purple.png'
+
 import { HashLink } from 'react-router-hash-link'
 
 function Logo() {
