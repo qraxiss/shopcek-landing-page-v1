@@ -80,6 +80,12 @@ footer {
             }
         }
 
+        .right {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1.2rem;
+        }
+
         .row {
             display: flex;
             justify-content: space-between;

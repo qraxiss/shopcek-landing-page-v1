@@ -191,6 +191,14 @@ function Socials() {
     )
 }
 
+function Partners() {
+    return (
+        <div className="partners">
+            <img src={purple} alt="" />
+        </div>
+    )
+}
+
 export function Footer() {
     const isPhone = useMediaQuery({ query: '(max-width: 768px)' })
 
