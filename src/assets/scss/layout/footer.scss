@@ -82,7 +82,8 @@ footer {
 
         .right {
             display: flex;
-            justify-content: flex-end;
+            flex-direction: column;
+            justify-content: flex-start;
             gap: 1.2rem;
         }
 
