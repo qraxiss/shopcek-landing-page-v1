@@ -39,6 +39,12 @@ footer {
         }
     }
 
+    .partners {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
     .nav {
         width: 70%;
         .title {
@@ -85,12 +91,6 @@ footer {
                     color: #757575;
                 }
             }
-        }
-
-        .partners {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
         }
 
         .row {
