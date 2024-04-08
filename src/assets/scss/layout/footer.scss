@@ -64,37 +64,36 @@ footer {
             color: #757575;
         }
 
+        .subscribe {
+            button {
+                background: transparent linear-gradient(108deg, #f556b8 0%, #14c5f0 100%) 0% 0% no-repeat padding-box;
+                border-width: 0;
+                border-radius: 0px 12px 12px 0px;
+                padding: 0.7rem 1.6rem;
+
+                .text {
+                    text-align: left;
+                    color: #ffffff;
+                }
+            }
+
+            input {
+                background: #fff 0% 0% no-repeat padding-box;
+                border-width: 0;
+                border-radius: 12px 0px 0px 12px;
+                padding: 0.7rem;
+            }
+
+            input::placeholder {
+                text-align: left;
+                color: #757575;
+            }
+        }
         .right {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             gap: 1.2rem;
-
-            .subscribe {
-                button {
-                    background: transparent linear-gradient(108deg, #f556b8 0%, #14c5f0 100%) 0% 0% no-repeat padding-box;
-                    border-width: 0;
-                    border-radius: 0px 12px 12px 0px;
-                    padding: 0.7rem 1.6rem;
-
-                    .text {
-                        text-align: left;
-                        color: #ffffff;
-                    }
-                }
-
-                input {
-                    background: #fff 0% 0% no-repeat padding-box;
-                    border-width: 0;
-                    border-radius: 12px 0px 0px 12px;
-                    padding: 0.7rem;
-                }
-
-                input::placeholder {
-                    text-align: left;
-                    color: #757575;
-                }
-            }
         }
 
         .row {
