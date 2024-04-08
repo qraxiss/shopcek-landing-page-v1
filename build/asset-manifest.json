@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fb6a640b.css",
-    "main.js": "/static/js/main.8ced650c.js",
+    "main.js": "/static/js/main.d2bce0da.js",
     "static/js/453.34bc8f3b.chunk.js": "/static/js/453.34bc8f3b.chunk.js",
     "static/media/question.svg": "/static/media/question.a2afda5ef3a025dd9cc137f582328727.svg",
     "static/media/mobile-background.png": "/static/media/mobile-background.5dc06e47c0f847d95f24.png",
@@ -15,10 +15,10 @@
     "static/media/Montserrat-Light.ttf": "/static/media/Montserrat-Light.7179b7d2ac9b599db5f9.ttf",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
     "static/media/Montserrat-ExtraLight.ttf": "/static/media/Montserrat-ExtraLight.d928d1131a9af02cb672.ttf",
+    "static/media/ms-purple.png": "/static/media/ms-purple.96dda7e710ecbc2880da.png",
     "static/media/icon.svg": "/static/media/icon.a1bea678671fe63a123b6c979de161ff.svg",
     "static/media/icons.png": "/static/media/icons.07fc1d3111176cd8bdf8.png",
     "static/media/handshake.png": "/static/media/handshake.71e88c947ee0379e09d8.png",
-    "static/media/ms-light.png": "/static/media/ms-light.105a8aea005337943806.png",
     "static/media/refill.svg": "/static/media/refill.fb27f9a83448961e53576b7ab1fe49e2.svg",
     "static/media/header-background.svg": "/static/media/header-background.ca38b5160b5634831585.svg",
     "static/media/3.svg": "/static/media/3.cb350beccb913445fdae3c4ebf77e608.svg",
@@ -35,11 +35,11 @@
     "static/media/left.svg": "/static/media/left.5f549b8bcd9f819f497ba3a9cdffd4a6.svg",
     "static/media/plug.svg": "/static/media/plug.6956503f92affa37cfda30301d7ee71c.svg",
     "main.fb6a640b.css.map": "/static/css/main.fb6a640b.css.map",
-    "main.8ced650c.js.map": "/static/js/main.8ced650c.js.map",
+    "main.d2bce0da.js.map": "/static/js/main.d2bce0da.js.map",
     "453.34bc8f3b.chunk.js.map": "/static/js/453.34bc8f3b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb6a640b.css",
-    "static/js/main.8ced650c.js"
+    "static/js/main.d2bce0da.js"
   ]
 }
