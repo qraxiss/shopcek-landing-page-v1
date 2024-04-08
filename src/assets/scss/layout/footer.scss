@@ -143,6 +143,14 @@ footer {
         padding-top: 3rem;
         padding-bottom: 1rem;
 
+        .mobile {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            align-items: flex-end;
+            gap: 1.5em;
+        }
+
         .container {
             display: flex;
             flex-direction: column;
