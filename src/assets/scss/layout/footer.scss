@@ -43,6 +43,10 @@ footer {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+
+        img {
+            height: 4em;
+        }
     }
 
     .nav {
