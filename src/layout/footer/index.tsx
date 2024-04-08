@@ -101,6 +101,7 @@ function Nav() {
                             <div className="text">SUBSCRIBE</div>
                         </button>
                     </div>
+                    <Socials />
                 </div>
             </div>
         </div>
