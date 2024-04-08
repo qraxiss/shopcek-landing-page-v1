@@ -234,7 +234,7 @@ export function Footer() {
                         {nav}
                         {isPhone ? <Partners /> : undefined}
                     </div>
-                    {isPhone ? undefined : <Partners />}
+                    {isPhone ? undefined : [<Socials />, <Partners />]}
                     <hr className="mid" />
                     {bottom}
                 </div>
