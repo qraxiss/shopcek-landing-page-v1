@@ -232,9 +232,9 @@ export function Footer() {
                     <div className="top">
                         <Logo />
                         {nav}
-                        {isPhone ? <Partners /> : undefined}
+                        {isPhone ? [<Socials />, <Partners />] : undefined}
                     </div>
-                    {isPhone ? undefined : [<Socials />, <Partners />]}
+                    {isPhone ? undefined : <Partners />}
                     <hr className="mid" />
                     {bottom}
                 </div>
