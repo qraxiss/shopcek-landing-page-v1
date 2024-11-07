@@ -1,4 +1,4 @@
-import App from '../app'
+import App from '../App'
 import { Home } from '../pages/home'
 import { LaunchApp } from '../pages/launch-app'
 
